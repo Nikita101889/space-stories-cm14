@@ -229,7 +229,7 @@
   - type: StorageFill
     contents:
     - id: CMMarkerFlare
-      amount: 8
+      amount: 16
 
 - type: entity
   parent: CMPouchTools

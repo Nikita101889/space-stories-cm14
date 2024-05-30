@@ -120,7 +120,7 @@
   - type: PlacementReplacement
     key: walls
   - type: IconSmooth
-    key: walls
+    key: window
     mode: NoSprite
   - type: PaintableAirlock
     group: Standard
