@@ -7,3 +7,4 @@ cm-ui-create-new-hive = Создать новый улей
 cm-ui-create-hive-title = Новое название улья
 cm-ui-humanoid = Гуманоид
 cm-ui-tier = Уровень { $tier }
+cm-xeno-words-of-the-queen-header = Слова королевы звучат в нашей голове...

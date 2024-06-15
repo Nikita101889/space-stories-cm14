@@ -1,2 +1,2 @@
 ent-CMXenoLarva = Личинка
-  .desc = { ent-CMXenoUndeveloped.desc }
+    .desc = { ent-CMXenoUndeveloped.desc }

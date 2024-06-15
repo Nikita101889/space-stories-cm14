@@ -13,8 +13,7 @@ ent-CMXenoUndeveloped = { ent-CMXenoBase }
 ent-CMXenoAI = { ent-CMXenoBase }
     .desc = { ent-CMXenoBase.desc }
 ent-CMXenoDeveloped = { "" }
-
-  .desc = { "" }
+    .desc = { "" }
 ent-CMXenoTail = { "" }
     .desc = { "" }
 ent-CMXenoFlammable = { "" }

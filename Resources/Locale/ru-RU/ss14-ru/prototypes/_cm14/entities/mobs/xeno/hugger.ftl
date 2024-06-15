@@ -1,2 +1,2 @@
 ent-CMXenoHugger = Лицехват
-  .desc = { ent-CMXenoUndeveloped.desc }
+    .desc = { ent-CMXenoUndeveloped.desc }
