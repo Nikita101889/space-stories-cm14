@@ -26,6 +26,8 @@
     powerLoad: 0
   - type: Corrodible
     isCorrodible: false
+  - type: Docking
+  - type: DockingSignalControl
 
 - type: entity
   parent: CMDoubleDoorBase
@@ -39,4 +41,6 @@
     powerLoad: 0
   - type: Corrodible
     isCorrodible: false
+  - type: Docking
+  - type: DockingSignalControl
 
