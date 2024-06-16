@@ -137,6 +137,9 @@ public sealed partial class TTSSystem
             {"с4", "Си 4"}, // cyrillic
             {"c4", "Си 4"}, // latinic
             {"бсс", "Бэ Эс Эс"},
+            {"вп", "Вэ Пэ"},
+            {"вз", "Вэ Зэ"},
+            {"ву", "Вэ У"},
         };
 
     private static readonly IReadOnlyDictionary<string, string> ReverseTranslit =

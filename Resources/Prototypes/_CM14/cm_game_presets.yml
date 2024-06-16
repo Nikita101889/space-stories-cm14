@@ -4,8 +4,16 @@
   - distresssignal
   - cmdistresssignal
   - cmds
-  name: Distress Signal
-  description: Respond to a distress signal sent by a nearby planet.
+  name: Сигнал Бедствия
+  description: Ответьте на сигнал бедствия, посланный соседней планетой.
   showInVote: true
   rules:
   - CMDistressSignal
+
+- type: gamePreset
+  id: CMGreenshift
+  alias:
+  - cmgreenshift
+  name: Гриншифт
+  showInVote: false
+  description: Пресет без событий, чтобы мероприятия админов проходили без помех.

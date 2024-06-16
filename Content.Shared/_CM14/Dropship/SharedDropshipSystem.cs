@@ -65,21 +65,21 @@ public abstract class SharedDropshipSystem : EntitySystem
 
         if (!TryGetEntity(args.Target, out var destination))
         {
-            Log.Warning($"{ToPrettyString(args.Actor)} tried to launch to invalid dropship destination {args.Target}");
+            Log.Warning($"{ToPrettyString(args.Actor)} попытка запуска с недопустимого места назначения дропшипа {args.Target}");
             return;
         }
 
         if (!TryComp(destination, out DropshipDestinationComponent? destinationComp))
         {
             Log.Warning(
-                $"{ToPrettyString(args.Actor)} tried to launch to invalid dropship destination {ToPrettyString(destination)}");
+                $"{ToPrettyString(args.Actor)} попытка запуска с недопустимого места назначения дропшипа {ToPrettyString(destination)}");
             return;
         }
 
         if (destinationComp.Ship != null)
         {
             Log.Warning(
-                $"{ToPrettyString(args.Actor)} tried to launch to occupied dropship destination {ToPrettyString(destination)}");
+                $"{ToPrettyString(args.Actor)} попытка запуска в занятое место назначения дропшипа {ToPrettyString(destination)}");
             return;
         }
 
@@ -93,14 +93,14 @@ public abstract class SharedDropshipSystem : EntitySystem
 
         if (!TryGetEntity(args.Destination, out var destination))
         {
-            Log.Warning($"{ToPrettyString(args.Actor)} tried to hijack to invalid destination");
+            Log.Warning($"{ToPrettyString(args.Actor)} попытка перехвата в недопустимом направлении");
             return;
         }
 
         if (!HasComp<DropshipHijackDestinationComponent>(destination))
         {
             Log.Warning(
-                $"{ToPrettyString(args.Actor)} tried to hijack to invalid destination {ToPrettyString(destination)}");
+                $"{ToPrettyString(args.Actor)} попытка перехвата в недопустимом направлении {ToPrettyString(destination)}");
             return;
         }
 
@@ -185,7 +185,7 @@ public abstract class SharedDropshipSystem : EntitySystem
                 if (seconds > 0)
                     timeString += $" {seconds} seconds";
 
-                _marineAnnounce.Announce(dropshipId, $"The {dropshipName} will be automatically recalled to the planet in{timeString}.", dropship.AnnounceAutoRecallIn);
+                _marineAnnounce.Announce(dropshipId, $"Корабль {dropshipName} будет автоматически отозван на планету через {timeString}.", dropship.AnnounceAutoRecallIn);
             }
 
             if (time < dropship.AutoRecallAt)
@@ -203,7 +203,7 @@ public abstract class SharedDropshipSystem : EntitySystem
                 if (FlyTo((computerId, computer), destinationId, computerId))
                 {
                     dropship.AutoRecallAt = default;
-                    _marineAnnounce.Announce(dropshipId, $"The {dropshipName} has been automatically called to {Name(destinationId)}.", dropship.AnnounceAutoRecallIn);
+                    _marineAnnounce.Announce(dropshipId, $"{dropshipName} был автоматически вызван на {Name(destinationId)}.", dropship.AnnounceAutoRecallIn);
                     break;
                 }
             }
