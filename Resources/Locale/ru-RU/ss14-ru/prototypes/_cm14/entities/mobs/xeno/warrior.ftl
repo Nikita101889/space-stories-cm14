@@ -1,2 +1,2 @@
-ent-CMXenoWarrior = Воин
+ent-CMXenoWarrior = Войн
     .desc = Мускулистый инопланетянин с бронированным панцирем.
