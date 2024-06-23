@@ -83,25 +83,6 @@
     deleteOnFriendlyXeno: true
 
 - type: entity
-  id: XenoSpitProjectile
-  parent: XenoBaseProjectile
-  name: spit
-  categories:
-  - HideSpawnMenu
-  components:
-  - type: Sprite
-    sprite: _CM14/Objects/Xeno/xeno_projectiles.rsi
-    layers:
-    - state: xeno_acid
-  - type: Projectile
-    impactEffect: null
-    damage:
-      types:
-        Caustic: 20
-  - type: XenoProjectile
-    deleteOnFriendlyXeno: true
-
-- type: entity
   id: XenoIchorSpitProjectile
   parent: XenoBaseProjectile
   name: ichor spit
@@ -109,7 +90,7 @@
   - HideSpawnMenu
   components:
   - type: Sprite
-    sprite: _CM14/Objects/Xeno/xeno_projectiles.rsi
+    sprite: _RMC14/Objects/Xeno/xeno_projectiles.rsi
     layers:
     - state: xeno_acid
   - type: Projectile
@@ -141,7 +122,7 @@
     sound: /Audio/Effects/smoke.ogg
   - type: DeleteOnTrigger
   - type: Sprite
-    sprite: _CM14/Objects/Xeno/xeno_projectiles.rsi
+    sprite: _RMC14/Objects/Xeno/xeno_projectiles.rsi
     layers:
     - state: boiler_railgun
   - type: TimedDespawn

@@ -5,7 +5,7 @@
   - HideSpawnMenu
   components:
   - type: Sprite
-    sprite: _CM14/Objects/Clothing/Uniforms/Marine/formal.rsi
+    sprite: _RMC14/Objects/Clothing/Uniforms/Marine/formal.rsi
     state: icon
   - type: CMVendorBundle
     bundle:
@@ -44,7 +44,7 @@
   name: essential medical set
   components:
   - type: Sprite
-    sprite: _CM14/Objects/Medical/stasisbag.rsi
+    sprite: _RMC14/Objects/Medical/stasisbag.rsi
     state: bodybag_folded
   - type: CMVendorBundle
     bundle:
@@ -120,7 +120,7 @@
   name: medium armor
   components:
   - type: Sprite
-    sprite: _CM14/Objects/Clothing/OuterClothing/Armor/m3/standard.rsi
+    sprite: _RMC14/Objects/Clothing/OuterClothing/Armor/m3/standard.rsi
     state: icon
   - type: CMVendorBundle
     bundle:
@@ -131,7 +131,7 @@
   name: light armor
   components:
   - type: Sprite
-    sprite: _CM14/Objects/Clothing/OuterClothing/Armor/m3/light.rsi
+    sprite: _RMC14/Objects/Clothing/OuterClothing/Armor/m3/light.rsi
     state: icon
   - type: CMVendorBundle
     bundle:
@@ -143,7 +143,7 @@
   name: light armor
   components:
   - type: Sprite
-    sprite: _CM14/Objects/Clothing/OuterClothing/Armor/m3/t.rsi
+    sprite: _RMC14/Objects/Clothing/OuterClothing/Armor/m3/t.rsi
     state: icon
   - type: CMVendorBundle
     bundle:
@@ -154,7 +154,7 @@
   name: heavy armor
   components:
   - type: Sprite
-    sprite: _CM14/Objects/Clothing/OuterClothing/Armor/m3/eod.rsi
+    sprite: _RMC14/Objects/Clothing/OuterClothing/Armor/m3/eod.rsi
     state: icon
   - type: CMVendorBundle
     bundle:
@@ -166,7 +166,7 @@
   name: medium armor
   components:
   - type: Sprite
-    sprite: _CM14/Objects/Clothing/OuterClothing/Armor/m3/b12.rsi
+    sprite: _RMC14/Objects/Clothing/OuterClothing/Armor/m3/b12.rsi
     state: icon
   - type: CMVendorBundle
     bundle:
@@ -178,7 +178,7 @@
   name: medium armor
   components:
   - type: Sprite
-    sprite: _CM14/Objects/Clothing/OuterClothing/Armor/m4.rsi
+    sprite: _RMC14/Objects/Clothing/OuterClothing/Armor/m4.rsi
     state: icon
   - type: CMVendorBundle
     bundle:

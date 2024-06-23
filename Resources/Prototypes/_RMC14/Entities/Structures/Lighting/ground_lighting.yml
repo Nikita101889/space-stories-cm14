@@ -6,7 +6,7 @@
   parent: LightPostSmall
   components:
   - type: Sprite
-    sprite: _CM14/Structures/Lighting/floodlight.rsi
+    sprite: _RMC14/Structures/Lighting/floodlight.rsi
     snapCardinals: true
     drawdepth: Objects
     noRot: true
@@ -66,7 +66,7 @@
   parent: LightPostSmall
   components:
   - type: Sprite
-    sprite: _CM14/Structures/Lighting/big_floodlight.rsi
+    sprite: _RMC14/Structures/Lighting/big_floodlight.rsi
     snapCardinals: true
     drawdepth: Objects
     noRot: true

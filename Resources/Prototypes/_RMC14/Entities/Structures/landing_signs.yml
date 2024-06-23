@@ -4,7 +4,7 @@
   id: CMLandingSignsBase
   components:
   - type: Sprite
-    sprite: _CM14/Structures/landing_signs.rsi
+    sprite: _RMC14/Structures/landing_signs.rsi
     drawdepth: Overdoors
     offset: 0,0.8
   - type: SpriteFade
@@ -12,7 +12,7 @@
     soundGroups:
       Brute:
         path:
-          "/Audio/_CM14/Structures/metalhit.ogg"
+          "/Audio/_RMC14/Structures/metalhit.ogg"
   - type: Physics
     bodyType: Static
     canCollide: true

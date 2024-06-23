@@ -1,5 +1,5 @@
 ﻿using Content.Shared.Actions;
 
-namespace Content.Shared._CM14.Xenos.Dash;
+namespace Content.Shared._RMC14.Xenonids.Dash;
 
 public sealed partial class XenoDashActionEvent : WorldTargetActionEvent;

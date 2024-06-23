@@ -32,7 +32,7 @@
   #    offState: off
   #    brokenState: broken
   - type: Sprite
-    sprite: _CM14/Structures/Machines/VendingMachines/colmartechweapons.rsi
+    sprite: _RMC14/Structures/Machines/VendingMachines/colmartechweapons.rsi
     layers:
     - state: "off"
       map: [ "enum.VendingMachineVisualLayers.Base" ]
@@ -62,7 +62,7 @@
   description: Marine Food Vendor, containing standard military Prepared Meals.
   components:
   - type: Sprite
-    sprite: _CM14/Structures/Machines/VendingMachines/ColMarTech/food.rsi
+    sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/food.rsi
   - type: CMAutomatedVendor
     sections:
     - name: Готовые блюда
@@ -102,7 +102,7 @@
     access:
     - [ "CMAccessMarinePrep" ]
   - type: Sprite
-    sprite: _CM14/Structures/Machines/VendingMachines/ColMarTech/attachments.rsi
+    sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/attachments.rsi
   - type: CMAutomatedVendor
     sections: # TODO CM14
     - name: Barrel
@@ -157,7 +157,7 @@
 #        amount: 2
 #      - id: CMAttachmentM39Stock
 #        amount: 2
-#      - id: CMAttachmentM41ASolidStock
+#      - id: CMAttachmentM54CSolidStock
 #        amount: 2
 #      - id: CMAttachmentM44MagnumSharpshooterStock
 #        amount: 2
@@ -172,7 +172,7 @@
     access:
     - [ "CMAccessMarinePrep" ]
   - type: Sprite
-    sprite: _CM14/Structures/Machines/VendingMachines/ColMarTech/attachments.rsi
+    sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/attachments.rsi
   - type: CMAutomatedVendor
     sections:
     - name: Еда
@@ -243,7 +243,7 @@
     access:
     - [ "CMAccessMarinePrep" ]
   - type: Sprite
-    sprite: _CM14/Structures/Machines/VendingMachines/ColMarTech/requisitions_ammo.rsi
+    sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/requisitions_ammo.rsi
   - type: CMAutomatedVendor
     sections:
     - name: Бронебойные боеприпасы
@@ -252,17 +252,17 @@
         amount: 3
       - id: CMMagazineSMGM39AP
         amount: 3
-      - id: CMMagazineRifleM41AAP
+      - id: CMMagazineRifleM54CAP
         amount: 3
     - name: Расширенные боеприпасы
       entries:
       - id: CMMagazineSMGM39Ext
         amount: 1
-      - id: CMMagazineRifleM41AExt
+      - id: CMMagazineRifleM54CExt
         amount: 1
     - name: Специальные боеприпасы
       entries: [ ]
-      #- id: CMDrumSmartgunM56
+      #- id: CMDrumSmartGunM56
       #  amount: 1
       #- id: CMSpeedLoaderM44Heavy
       #  amount: 2
@@ -299,7 +299,7 @@
     access:
     - [ "CMAccessMarinePrep" ]
   - type: Sprite
-    sprite: _CM14/Structures/Machines/VendingMachines/ColMarTech/guns.rsi
+    sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/guns.rsi
   - type: CMAutomatedVendor
     sections:
     - name: Первичное оружие
@@ -310,7 +310,7 @@
         amount: 15
       - id: WeaponSMGM39
         amount: 30
-      - id: WeaponRifleM41A
+      - id: WeaponRifleM54C
         amount: 30
         recommended: true
     - name: Основные боеприпасы
@@ -325,7 +325,7 @@
         amount: 15
       - id: CMMagazineSMGM39
         amount: 25
-      - id: CMMagazineRifleM41A
+      - id: CMMagazineRifleM54C
         amount: 25
     - name: Вторичное оружие
       entries:
@@ -349,7 +349,7 @@
       entries: [ ]
       #- id: CMAttachmentFoldingStockM39
       #  amount: 10
-      #- id: CMAttachmentFoldingStockM41A
+      #- id: CMAttachmentFoldingStockM54C
       #  amount: 10
       #- id: CMAttachmentRailFlashlight
       #  amount: 25
@@ -375,7 +375,7 @@
     access:
     - [ "CMAccessMarineRifleman" ]
   - type: Sprite
-    sprite: _CM14/Structures/Machines/VendingMachines/ColMarTech/equipment.rsi
+    sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/equipment.rsi
   - type: CMAutomatedVendor
     sections:
     - name: Стандартное оборудование
@@ -491,9 +491,9 @@
         points: 10
       - id: CMMagazineSMGM39Ext
         points: 10
-      - id: CMMagazineRifleM41AAP
+      - id: CMMagazineRifleM54CAP
         points: 10
-      - id: CMMagazineRifleM41AExt
+      - id: CMMagazineRifleM54CExt
         points: 10
     - name: Вторичные боеприпасы
       entries:
@@ -590,7 +590,7 @@
     access:
     - [ "CMAccessSquadLeaderPrep" ]
   - type: Sprite
-    sprite: _CM14/Structures/Machines/VendingMachines/ColMarTech/gear.rsi
+    sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/gear.rsi
   - type: CMAutomatedVendor
     job: CMSquadLeader
     sections:
@@ -603,7 +603,7 @@
       entries: [ ]
     #- id: CMM4RASniperKit
     #  points: 0
-    #- id: CMM41AStandardKit
+    #- id: CMM54CStandardKit
     #  points: 0
     #- id: CMM240PyrotechnicianSupportKit
     #  points: 0
@@ -735,9 +735,9 @@
         points: 6
       - id: CMMagazineSMGM39Ext
         points: 6
-      - id: CMMagazineRifleM41AAP
+      - id: CMMagazineRifleM54CAP
         points: 6
-      - id: CMMagazineRifleM41AExt
+      - id: CMMagazineRifleM54CExt
         points: 6
     - name: Вторичные боеприпасы
       entries:
@@ -784,7 +784,7 @@
     access:
     - [ "CMAccessSquadLeaderPrep" ]
   - type: Sprite
-    sprite: _CM14/Structures/Machines/VendingMachines/ColMarTech/clothing.rsi
+    sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/clothing.rsi
   - type: CMAutomatedVendor
     job: CMSquadLeader
     sections:
@@ -857,7 +857,7 @@
     access:
     - [ "CMAccessSpecPrep" ]
   - type: Sprite
-    sprite: _CM14/Structures/Machines/VendingMachines/ColMarTech/specialist_gear.rsi
+    sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/specialist_gear.rsi
   - type: CMAutomatedVendor
     job: CMWeaponsSpecialist
     pointsType: Specialist
@@ -931,7 +931,7 @@
     access:
     - [ "CMAccessSpecPrep" ]
   - type: Sprite
-    sprite: _CM14/Structures/Machines/VendingMachines/ColMarTech/clothing.rsi
+    sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/clothing.rsi
   - type: CMAutomatedVendor
     job: CMWeaponsSpecialist
     sections:
@@ -1039,7 +1039,7 @@
     access:
     - [ "CMAccessCombatTechPrep" ]
   - type: Sprite
-    sprite: _CM14/Structures/Machines/VendingMachines/ColMarTech/combat_technician_gear.rsi
+    sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/combat_technician_gear.rsi
   - type: CMAutomatedVendor
     job: CMCombatTech
     sections:
@@ -1109,9 +1109,9 @@
         points: 6
       - id: CMMagazineSMGM39Ext
         points: 6
-      - id: CMMagazineRifleM41AAP
+      - id: CMMagazineRifleM54CAP
         points: 6
-      - id: CMMagazineRifleM41AExt
+      - id: CMMagazineRifleM54CExt
         points: 6
     - name: Броня
       entries:
@@ -1194,7 +1194,7 @@
   description: An automated rack hooked up to a colossal storage of combat technician standard-issue equipment.
   components:
   - type: Sprite
-    sprite: _CM14/Structures/Machines/VendingMachines/ColMarTech/clothing.rsi
+    sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/clothing.rsi
   - type: AccessReader
     access:
     - [ "CMAccessCombatTechPrep" ]
@@ -1280,7 +1280,7 @@
     access:
     - [ "CMAccessMedPrep" ]
   - type: Sprite
-    sprite: _CM14/Structures/Machines/VendingMachines/ColMarTech/medical_gear.rsi
+    sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/medical_gear.rsi
   - type: CMAutomatedVendor
     job: CMHospitalCorpsman
     sections:
@@ -1380,9 +1380,9 @@
         points: 6
       - id: CMMagazineSMGM39Ext
         points: 6
-      - id: CMMagazineRifleM41AAP
+      - id: CMMagazineRifleM54CAP
         points: 6
-      - id: CMMagazineRifleM41AExt
+      - id: CMMagazineRifleM54CExt
         points: 6
     - name: Вторичные боеприпасы
       entries:
@@ -1451,7 +1451,7 @@
     access:
     - [ "CMAccessMedPrep" ]
   - type: Sprite
-    sprite: _CM14/Structures/Machines/VendingMachines/ColMarTech/clothing.rsi
+    sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/clothing.rsi
   - type: CMAutomatedVendor
     job: CMHospitalCorpsman
     sections:
@@ -1548,7 +1548,7 @@
         - MachineLayer
         density: 200
   - type: Sprite
-    sprite: _CM14/Structures/Machines/VendingMachines/ColMarTech/marine_medical.rsi
+    sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/marine_medical.rsi
     layers:
     - state: "off"
       map: [ "enum.VendingMachineVisualLayers.Base" ]
@@ -1596,17 +1596,17 @@
     access:
     - [ "CMAccessSmartPrep" ]
   - type: Sprite
-    sprite: _CM14/Structures/Machines/VendingMachines/ColMarTech/smartgunner_gear.rsi
+    sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/smart_gun_operator_gear.rsi
   - type: CMAutomatedVendor
-    job: CMSmartgunner
+    job: CMSmartGunOperator
     sections:
     - name: Набор умного пулемётчика (обязательно)
       entries: [ ]
-    #- id: CMEssentialSmartgunnerSet
+    #- id: CMEssentialSmartGunOperatorSet
     #  points: 0
     - name: Боеприпасы смартгана
       entries: [ ]
-    #- id: CMM56SmartgunDrum
+    #- id: CMM56SmartGunDrum
     #  points: 15
     - name: Обвесы
       entries: [ ]
@@ -1699,9 +1699,9 @@
     access:
     - [ "CMAccessSmartPrep" ]
   - type: Sprite
-    sprite: _CM14/Structures/Machines/VendingMachines/ColMarTech/clothing.rsi
+    sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/clothing.rsi
   - type: CMAutomatedVendor
-    job: CMSmartgunner
+    job: CMSmartGunOperator
     sections:
     - name: Стандартное оборудование
       takeAll: CMStandard
@@ -1711,8 +1711,8 @@
       #- id: CMMap # TODO: Make a map
     - name: Пояс
       entries: [ ]
-    #- id: CMM802SmartgunnerSidearmBelt
-    #- id: CMM280SmartgunnerDrumBelt
+    #- id: CMM802SmartGunOperatorSidearmBelt
+    #- id: CMM280SmartGunOperatorDrumBelt
     - name: Подсумки
       choices: { CMPouch: 2 }
       entries:
@@ -1755,7 +1755,7 @@
     access:
     - [ "CMAccessFTLPrep" ]
   - type: Sprite
-    sprite: _CM14/Structures/Machines/VendingMachines/ColMarTech/fireteam_leader_gear.rsi
+    sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/fireteam_leader_gear.rsi
   - type: CMAutomatedVendor
     job: CMFireteamLeader
     sections:
@@ -1789,9 +1789,9 @@
         points: 10
       - id: CMMagazineSMGM39Ext
         points: 10
-      - id: CMMagazineRifleM41AAP
+      - id: CMMagazineRifleM54CAP
         points: 10
-      - id: CMMagazineRifleM41AExt
+      - id: CMMagazineRifleM54CExt
         points: 10
     - name: Вторичные боеприпасы
       entries:
@@ -1876,7 +1876,7 @@
     access:
     - [ "CMAccessFTLPrep" ]
   - type: Sprite
-    sprite: _CM14/Structures/Machines/VendingMachines/ColMarTech/clothing.rsi
+    sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/clothing.rsi
   - type: CMAutomatedVendor
     job: CMFireteamLeader
     sections:
@@ -1943,7 +1943,7 @@
     access:
     - [ "CMAccessMarinePrep" ]
   - type: Sprite
-    sprite: _CM14/Structures/Machines/VendingMachines/ColMarTech/clothing.rsi
+    sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/clothing.rsi
   - type: CMAutomatedVendor
     sections:
     - name: Стандартное оборудование

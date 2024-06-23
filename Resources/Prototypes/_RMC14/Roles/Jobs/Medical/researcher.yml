@@ -31,7 +31,7 @@
     back: CMSatchel
     shoes: CMShoesLaceup
     id: CMIDCardResearcher
-    # TODO CM14 random chemical synthesis note, syringe,
+    # TODO RMC14 random chemical synthesis note, syringe,
 
 - type: startingGear
   id: CMGearResearcherEquipped

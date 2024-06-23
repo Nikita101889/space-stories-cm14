@@ -5,10 +5,10 @@ using Robust.Shared.Audio;
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
 
-namespace Content.Shared._CM14.Xenos.Dash;
+namespace Content.Shared._RMC14.Xenonids.Dash;
 
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
-[Access(typeof(SharedXenoDashSystem))]
+[Access(typeof(XenoDashSystem))]
 public sealed partial class XenoDashComponent : Component
 {
     [DataField, AutoNetworkedField]

@@ -76,7 +76,7 @@
   suffix: Alamo, Solid, Right
   components:
   - type: Sprite
-    sprite: _CM14/Structures/Doors/Airlocks/Double/alamo_dropship_solid_right.rsi
+    sprite: _RMC14/Structures/Doors/Airlocks/Double/alamo_dropship_solid_right.rsi
   - type: Occluder
   - type: ApcPowerReceiver
     powerLoad: 0
@@ -91,7 +91,7 @@
   suffix: Alamo, Solid, Left
   components:
   - type: Sprite
-    sprite: _CM14/Structures/Doors/Airlocks/Double/alamo_dropship_solid_left.rsi
+    sprite: _RMC14/Structures/Doors/Airlocks/Double/alamo_dropship_solid_left.rsi
   - type: Occluder
   - type: ApcPowerReceiver
     powerLoad: 0

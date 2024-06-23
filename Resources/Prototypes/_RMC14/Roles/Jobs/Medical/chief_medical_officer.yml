@@ -39,7 +39,8 @@
     back: CMSatchel
     shoes: ClothingShoesColorWhite
     id: CMIDCardCMO
-    # TODO CM14 random chemical synthesis note
+    # TODO RMC14 random chemical synthesis note
+    ears: CMHeadsetCMO
 
 - type: startingGear
   id: CMGearCMOEquipped

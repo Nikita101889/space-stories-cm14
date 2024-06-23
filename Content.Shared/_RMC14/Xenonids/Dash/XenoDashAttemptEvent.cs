@@ -1,4 +1,4 @@
-﻿namespace Content.Shared._CM14.Xenos.Dash;
+﻿namespace Content.Shared._RMC14.Xenonids.Dash;
 
 [ByRefEvent]
 public record struct XenoDashAttemptEvent(bool Cancelled);

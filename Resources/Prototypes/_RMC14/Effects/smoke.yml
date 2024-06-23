@@ -5,5 +5,5 @@
   noSpawn: true
   components:
   - type: Sprite
-    sprite: _CM14/Effects/smoke.rsi
+    sprite: _RMC14/Effects/smoke.rsi
     state: smoke

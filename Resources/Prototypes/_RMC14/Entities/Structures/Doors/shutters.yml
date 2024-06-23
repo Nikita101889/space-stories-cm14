@@ -4,7 +4,7 @@
   components:
   - type: Occluder
   - type: Sprite
-    sprite: _CM14/Structures/Doors/Shutters/shutters.rsi
+    sprite: _RMC14/Structures/Doors/Shutters/shutters.rsi
     drawdepth: BlastDoors
     layers:
     - state: closed
@@ -16,7 +16,7 @@
   components:
   - type: Occluder
   - type: Sprite
-    sprite: _CM14/Structures/Doors/Shutters/blastdoor.rsi
+    sprite: _RMC14/Structures/Doors/Shutters/blastdoor.rsi
     drawdepth: BlastDoors
     layers:
     - state: closed
@@ -28,7 +28,7 @@
   components:
   - type: Occluder
   - type: Sprite
-    sprite: _CM14/Structures/Doors/Shutters/white_almayer_blastdoor.rsi
+    sprite: _RMC14/Structures/Doors/Shutters/white_almayer_blastdoor.rsi
     drawdepth: BlastDoors
     layers:
     - state: closed
@@ -40,7 +40,7 @@
   components:
   - type: Occluder
   - type: Sprite
-    sprite: _CM14/Structures/Doors/Shutters/black_almayer_blastdoor.rsi
+    sprite: _RMC14/Structures/Doors/Shutters/black_almayer_blastdoor.rsi
     drawdepth: BlastDoors
     layers:
     - state: closed

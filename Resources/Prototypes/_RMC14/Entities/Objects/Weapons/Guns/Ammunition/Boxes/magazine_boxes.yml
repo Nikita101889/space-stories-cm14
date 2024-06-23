@@ -20,8 +20,8 @@
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Boxes/magazine_boxes.rsi
     layers:
-    - state: base_m41ae2
-    - state: magaz_m41ae2_3
+    - state: base_M54Ce2
+    - state: magaz_M54Ce2_3
       map: [ "enum.CMItemSlotsLayers.Fill" ]
   - type: Appearance
   - type: DeployableItem

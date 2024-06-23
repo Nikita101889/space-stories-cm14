@@ -1,28 +1,35 @@
 ﻿using System.Numerics;
-using Content.Shared._CM14.Xenos.Plasma;
+using Content.Shared._RMC14.Xenonids.Animation;
+using Content.Shared._RMC14.Xenonids.Plasma;
 using Content.Shared.Coordinates;
 using Content.Shared.Damage;
 using Content.Shared.Effects;
 using Content.Shared.FixedPoint;
 using Content.Shared.Throwing;
+using Content.Shared.Movement.Pulling.Components;
+using Content.Shared.Movement.Pulling.Events;
+using Content.Shared.Movement.Pulling.Systems;
+using Content.Shared.Pulling.Events;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Network;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Player;
 using Robust.Shared.Timing;
 
-namespace Content.Shared._CM14.Xenos.Dash;
+namespace Content.Shared._RMC14.Xenonids.Dash;
 
-public abstract class SharedXenoDashSystem : EntitySystem
+public sealed class XenoDashSystem : EntitySystem
 {
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly SharedColorFlashEffectSystem _colorFlash = default!;
     [Dependency] private readonly DamageableSystem _damageable = default!;
     [Dependency] private readonly INetManager _net = default!;
     [Dependency] private readonly ThrowingSystem _throwing = default!;
+    [Dependency] private readonly PullingSystem _pulling = default!;
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly ThrownItemSystem _thrownItem = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
+    [Dependency] private readonly XenoAnimationsSystem _xenoAnimations = default!;
     [Dependency] private readonly XenoPlasmaSystem _xenoPlasma = default!;
 
     private EntityQuery<PhysicsComponent> _physicsQuery;
@@ -51,6 +58,9 @@ public abstract class SharedXenoDashSystem : EntitySystem
         if (!_xenoPlasma.TryRemovePlasmaPopup(xeno.Owner, xeno.Comp.PlasmaCost))
             return;
 
+        if (TryComp(xeno, out PullerComponent? puller) && TryComp(puller.Pulling, out PullableComponent? pullable))
+            _pulling.TryStopPull(puller.Pulling.Value, pullable, xeno);
+
         args.Handled = true;
 
         var origin = _transform.GetMapCoordinates(xeno);
@@ -75,6 +85,9 @@ public abstract class SharedXenoDashSystem : EntitySystem
         }
 
         if (_timing.IsFirstTimePredicted && xeno.Comp.Charge is { } charge)
+        {
             xeno.Comp.Charge = null;
+            _xenoAnimations.PlayLungeAnimationEvent(xeno, charge);
+        }
     }
 }

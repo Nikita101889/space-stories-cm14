@@ -54,6 +54,11 @@ namespace Content.Server._RMC14.Rules;
 
 public sealed class CMDistressSignalRuleSystem : GameRuleSystem<CMDistressSignalRuleComponent>
 {
+    private int xenosCount { get; set; }
+    private int xenosAliveCount { get; set; }
+    private int marinesCount { get; set; }
+    private int marinesAliveCount { get; set; }
+
     [Dependency] private readonly AudioSystem _audio = default!;
     [Dependency] private readonly IBanManager _bans = default!;
     [Dependency] private readonly IComponentFactory _compFactory = default!;
@@ -459,32 +464,41 @@ public sealed class CMDistressSignalRuleSystem : GameRuleSystem<CMDistressSignal
 
             var xenos = EntityQueryEnumerator<XenoComponent, MobStateComponent, TransformComponent>();
             var xenosAlive = false;
+            xenosCount = 0;
+            xenosAliveCount = 0;
             var xenosOnShip = false;
             while (xenos.MoveNext(out var xenoId, out var xeno, out var mobState, out var xform))
             {
+                xenosCount++;
                 if (!xeno.ContributesToVictory)
                     continue;
 
                 if (_mobState.IsAlive(xenoId, mobState))
+                {
                     xenosAlive = true;
+                    xenosAliveCount++;
+                }
 
                 if (HasComp<AlmayerComponent>(xform.GridUid))
                     xenosOnShip = true;
-
-                if (xenosAlive && xenosOnShip)
-                    break;
             }
 
             var marines = EntityQueryEnumerator<MarineComponent, MobStateComponent, TransformComponent>();
             var marinesAlive = false;
+            marinesCount = 0;
+            marinesAliveCount = 0;
             var marinesOnShip = false;
             while (marines.MoveNext(out var marineId, out _, out var mobState, out var xform))
             {
+                marinesCount++;
                 if (HasComp<VictimInfectedComponent>(marineId) || HasComp<VictimBurstComponent>(marineId))
                     continue;
 
                 if (_mobState.IsAlive(marineId, mobState))
+                {
                     marinesAlive = true;
+                    marinesAliveCount++;
+                }
 
                 if (HasComp<AlmayerComponent>(xform.GridUid))
                     marinesOnShip = true;
@@ -727,6 +741,7 @@ public sealed class CMDistressSignalRuleSystem : GameRuleSystem<CMDistressSignal
     {
         base.AppendRoundEndText(uid, component, gameRule, ref args);
         args.AddLine($"{Loc.GetString($"cm-distress-signal-{component.Result.ToString().ToLower()}")}");
+        args.AddLine($"{Loc.GetString("cm-distress-signal-statistic", ("marines", marinesCount), ("marinesAlive", marinesAliveCount), ("xenos", xenosCount), ("xenosAlive", xenosAliveCount)) }");
     }
 
     protected override void ActiveTick(EntityUid uid, CMDistressSignalRuleComponent component, GameRuleComponent gameRule, float frameTime)

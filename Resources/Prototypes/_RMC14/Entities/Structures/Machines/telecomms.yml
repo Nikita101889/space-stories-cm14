@@ -33,7 +33,7 @@
   description: When powered it allows radio headset communication.
   components:
   - type: Sprite
-    sprite: _CM14/Structures/comm_tower.rsi
+    sprite: _RMC14/Structures/comm_tower.rsi
     offset: -0.5,1
     layers:
     - state: broken
@@ -64,7 +64,7 @@
   description: When powered it allows radio headset communication.
   components:
   - type: Sprite
-    sprite: _CM14/Structures/comm_tower.rsi
+    sprite: _RMC14/Structures/comm_tower.rsi
     layers:
     - state: off
     - state: default

@@ -5,7 +5,7 @@
   description: A wood barricade that keeps the unwanted out.
   components:
   - type: Sprite
-    sprite: _CM14/Structures/Walls/Barricades/barricade.rsi
+    sprite: _RMC14/Structures/Walls/Barricades/barricade.rsi
     layers:
     - state: wooden
   - type: Damageable

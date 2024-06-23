@@ -345,3 +345,35 @@
     range: 9
     useDelay: 14
     checkCanAccess: false
+
+- type: entity
+  id: ActionXenoBombard
+  parent: ActionXenoBase
+  name: Bombard (200)
+  description: You dig in for 5 seconds and prepare to fire, firing either an acidic glob or neurotoxic glob. Your acidic globs will deal continual damage to anything caught in its radius, while neurotoxin will cause targets to suffocate, be slowed down and blinded, alongside eventually knocking them unconscious to be kidnapped.
+  components:
+  - type: WorldTargetAction
+    itemIconStyle: NoItem
+    icon:
+      sprite: _RMC14/Actions/xeno_actions.rsi
+      state: bombard
+    event: !type:XenoSpitActionEvent
+    useDelay: 30
+    range: 15
+    checkCanAccess: false
+
+- type: entity
+  id: ActionXenoDash
+  parent: ActionXenoBase
+  name: Dash (40)
+  description: Dash a short distance at a desired location of your choice.
+  components:
+  - type: WorldTargetAction
+    itemIconStyle: NoItem
+    icon:
+      sprite: _RMC14/Actions/xeno_actions.rsi
+      state: prae_dash
+    event: !type:XenoDashActionEvent
+    range: 15
+    useDelay: 10
+    checkCanAccess: false

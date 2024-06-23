@@ -1,5 +1,5 @@
 using System.Linq;
-using Content.Server._CM14.Rules;
+using Content.Server._RMC14.Rules;
 using Content.Server.Announcements;
 using Content.Server.Discord;
 using Content.Server.GameTicking.Events;

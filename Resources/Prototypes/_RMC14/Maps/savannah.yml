@@ -1,7 +1,7 @@
 - type: gameMap
   id: Savannah
   mapName: Savannah
-  mapPath: /Maps/_CM14/savannah.yml
+  mapPath: /Maps/_RMC14/savannah.yml
   minPlayers: 0
   stations:
     Savannah:

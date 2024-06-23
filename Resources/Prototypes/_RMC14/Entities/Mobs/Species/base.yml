@@ -147,7 +147,7 @@
   - type: AffectableByWeeds
   - type: UserIFF
   - type: UserLimitHits
-  - type: MovementIgnoreGravity
+  # - type: MovementIgnoreGravity Stories-Fix
   - type: SlowOnPull
     multiplier: 0.6
   - type: MobThresholds
