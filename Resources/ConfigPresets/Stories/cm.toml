@@ -14,8 +14,13 @@ auto_call_time = 0
 emergency      = false
 preload_grids  = false
 
+[ghost]
+kill_crit = false
+role_time = 0
+
 [ic]
 flavor_text = true
+enable_suicide = false
 
 [viewport]
 maximum_width = 26

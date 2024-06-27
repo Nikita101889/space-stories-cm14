@@ -1,7 +1,7 @@
 - type: tile
   abstract: true
   id: CMPlanetBase
-  isSubfloor: true
+  isSubfloor: false
   canCrowbar: false
   footstepSounds:
     collection: FootstepGrass
@@ -23,12 +23,12 @@
   sprite: /Textures/_RMC14/Tiles/planet/desert/desert.png
   variants: 6
   placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
+  - 0.91
+  - 0.02
+  - 0.02
+  - 0.02
+  - 0.02
+  - 0.01
 
 - type: tile
   parent: CMPlanetBase

@@ -179,7 +179,7 @@ public sealed class XenoLeapSystem : EntitySystem
                 _stun.TryParalyze(other, xeno.Comp.ParalyzeTime, true);
         }
 
-        _stun.TryStun(xeno, xeno.Comp.MoveDelayTime, true);
+        _stun.TrySlowdown(xeno, xeno.Comp.MoveDelayTime, false, 0f, 0f);
         var ev = new XenoLeapHitEvent(xeno, other);
         RaiseLocalEvent(xeno, ref ev);
 
