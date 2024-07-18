@@ -4,6 +4,10 @@
   name: cm-job-name-cargotech
   description: cm-job-description-cargotech
   playTimeTracker: CMJobCargoTech
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: CMSquad
+      time: 3600 # 1 hours
   startingGear: CMGearCargoTech
   icon: "CMJobIconCargoTech"
   joinNotifyCrew: false
@@ -17,6 +21,7 @@
       construction: 1
       firearms: 1
       powerLoader: 2
+    - type: BaseGunWhitelist
 
 - type: startingGear
   id: CMGearCargoTech

@@ -32,6 +32,7 @@
     - type: CMVendorUser
       points: 45
     - type: MarineOrders
+    - type: BaseGunWhitelist
 
 - type: startingGear
   id: CMGearSquadLeader

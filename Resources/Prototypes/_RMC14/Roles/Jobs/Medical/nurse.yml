@@ -22,6 +22,7 @@
       medical: 3
       surgery: 1
     - type: RMCUserBulkyArmorIncapable
+    - type: BaseGunWhitelist
 
 - type: startingGear
   id: CMGearNurse

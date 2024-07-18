@@ -1,19 +1,81 @@
-# RIFLEMAN
-
 - type: entity
-  parent: ColMarTechBase
-  id: ColMarTechEquipment
-  name: ColMarTech automated marine equipment rack
-  description: An automated rack hooked up to a colossal storage of Marine Rifleman standard-issue equipment.
+  parent: ColMarTechGuns
+  id: CadetColMarTechGuns
   components:
-  - type: AccessReader
-    access:
-    - [ "CMAccessMarineRifleman" ]
-  - type: Sprite
-    sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/equipment.rsi
   - type: CMAutomatedVendor
     jobs:
-    - CMRifleman
+    - CMCadet
+    sections:
+    - name: Основное огнестрельное оружие
+      entries:
+      - id: CadetWeaponRifleM4SPR
+        amount: 10
+      - id: CadetWeaponShotgunM42A2
+        amount: 15
+      - id: CadetWeaponSMGM63
+        amount: 30
+      - id: CadetWeaponRifleM54C
+        amount: 30
+        recommended: true
+    - name: Основные боеприпасы
+      entries:
+      - id: CMBoxShotgunFlechette
+        amount: 4
+      - id: CMBoxShotgunBuckshot
+        amount: 10
+      - id: CMBoxShotgunSlugs
+        amount: 10
+      - id: CMMagazineRifleM4SPR
+        amount: 15
+      - id: CMMagazineSMGM63
+        amount: 25
+      - id: CMMagazineRifleM54C
+        amount: 25
+    - name: Вторичное огнестрельное оружие
+      entries:
+      - id: CMCadetWeaponPistolM77
+        amount: 25
+      #- id: CMCadetWeaponRevolverM44
+      #  amount: 25
+      - id: CMCadetWeaponPistolM1984
+        amount: 25
+      #- id: WeaponFlareM82F
+      #  amount: 10
+    - name: Вторичные боеприпасы
+      entries:
+      - id: CMMagazinePistolM77AP
+        amount: 25
+#      - id: CMSpeedLoaderM44
+#        amount: 20
+      - id: CMMagazinePistolM1984
+        amount: 25
+    - name: Обвесы
+      entries:
+      - id: RMCAttachmentM63StockCollapsible
+        amount: 10
+      - id: RMCAttachmentM54CStockCollapsible
+        amount: 10
+      - id: RMCAttachmentRailFlashlight
+        amount: 25
+      - id: RMCAttachmentFlashlightGrip
+        amount: 10
+      - id: RMCAttachmentU1GrenadeLauncher
+        amount: 25
+    - name: Утилиты
+      entries:
+      - id: RMCM5Bayonet
+        amount: 25
+      - id: CMPackFlare
+        amount: 10
+        recommended: true
+
+- type: entity
+  parent: ColMarTechEquipment
+  id: CadetColMarTechEquipment
+  components:
+  - type: CMAutomatedVendor
+    jobs:
+    - CMCadet
     sections:
     - name: Стандартное снаряжение
       takeAll: CMStandard
@@ -38,7 +100,7 @@
       - id: CMBackpackMarine
         name: Рюкзак
       - id: CMSatchelMarine
-        name: satchel
+        name: Сумка
         recommended: true
       #- id: CMShotgunScabbard # TODO: Make a Scabbard
     - name: Пояс
@@ -83,7 +145,7 @@
       - id: CMMaskGas
       - id: CMMaskCoif
     #    CMRebreather #TODO: Make this
-    - name: Engineering Supplies
+    - name: Инженерные принадлежности
       entries:
       - id: CMEntrenchingTool
         points: 5
@@ -93,35 +155,15 @@
 #        points: 5
       - id: CMWelderSmall
         points: 5
-    - name: Restricted Firearms
+    - name: Огнестрельное оружие ограниченного поражения
       entries:
-      - id: CMWeaponPistolMK80
+      - id: CMCadetWeaponPistolMK80
         points: 15
     #- id: CMSU6SmartPistol
     #  points: 15
     #- id: CMM79GrenadeLauncher
     #  points: 30
-    - name: Взрывчатка
-      entries:
-      - id: CMPacketGrenadeHighExplosiveFilled
-        points: 20
-    #- id: CMM40HIDPIncendiaryPacket3
-    #  points: 20
-    #- id: CMM40HPDPPhosphorusPacket3
-    #  points: 20
-    #- id: CMM40HSDPSmokePacket3
-    #  points: 10
-    #- id: CMM74AGMFragAirburstPacket3
-    #  points: 15
-    #- id: CMM74AGMIncendiaryAirburstPacket3
-    #  points: 15
-    #- id: CMM74AGMSmokeAirburstPacket3
-    #  points: 10
-    #- id: CMM74AGMHornetAirburstPacket3
-    #  points: 15
-    #- id: CMM20MineBox4
-    #  points: 20
-    - name: Primary Ammunition
+    - name: Основные боеприпасы
       entries:
       - id: CMMagazineRifleM4SPRAP
         points: 10
@@ -133,7 +175,7 @@
         points: 10
       - id: CMMagazineRifleM54CExt
         points: 10
-    - name: Sidearm Ammunition
+    - name: Боеприпасы к оружию
       entries:
 #      - id: CMM44HeavySpeedLoader
 #        points: 10

@@ -31,6 +31,10 @@
     item: PrimaryGun
   - type: GunUnskilledPenalty
     angleIncrease: 20
+  - type: GunUserWhitelist
+    whitelist:
+      components:
+      - BaseGunWhitelist
 
 - type: entity
   parent: CMBaseWeaponSMG
@@ -101,3 +105,15 @@
       rmc-aslot-rail: 0.032, 0.155
       rmc-aslot-stock: -0.81, 0.032
       rmc-aslot-underbarrel: 0.25, -0.25
+
+# Stories
+
+- type: entity
+  parent: WeaponSMGM63
+  id: CadetWeaponSMGM63
+  components:
+  - type: GunIFF
+  - type: GunUserWhitelist
+    whitelist:
+      components:
+      - CadetWhitelist

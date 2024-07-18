@@ -28,6 +28,7 @@
       powerLoader: 2
       surgery: 1
     - type: MarineOrders
+    - type: BaseGunWhitelist
 
 - type: startingGear
   id: CMGearPilotDropship

@@ -38,6 +38,7 @@
       surgery: 1
       vehicles: 1
     - type: MarineOrders
+    - type: BaseGunWhitelist
 
 - type: startingGear
   id: CMGearExecutiveOfficer

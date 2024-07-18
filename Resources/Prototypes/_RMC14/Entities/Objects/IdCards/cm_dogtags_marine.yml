@@ -1,5 +1,13 @@
 ﻿- type: entity
   parent: CMIDCardStandardDogtag
+  id: CMDogtagCadet
+  name: Cadet's dogtags
+  components:
+  - type: PresetIdCard
+    job: CMCadet
+
+- type: entity
+  parent: CMIDCardStandardDogtag
   id: CMDogtagRifleman
   name: Rifleman's dogtags
   components:

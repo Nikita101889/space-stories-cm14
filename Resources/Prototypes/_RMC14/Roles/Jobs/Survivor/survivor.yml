@@ -27,6 +27,7 @@
       construction: 1
       endurance: 2
       firearms: 1
+    - type: BaseGunWhitelist
   hasIcon: false
 
 - type: startingGear

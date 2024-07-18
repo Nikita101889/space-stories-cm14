@@ -4,6 +4,10 @@
   name: cm-job-name-messtech
   description: cm-job-description-messtech
   playTimeTracker: CMJobMessTech
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: CMSquad
+      time: 3600 # 1 hours
   startingGear: CMGearMessTech
   icon: "CMJobIconMessTech"
   joinNotifyCrew: false
@@ -18,6 +22,7 @@
       domestics: 2
       engineer: 1
       firearms: 2
+    - type: BaseGunWhitelist
 
 - type: startingGear
   id: CMGearMessTech

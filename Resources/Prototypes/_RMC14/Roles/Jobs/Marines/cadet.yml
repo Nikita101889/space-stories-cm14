@@ -1,62 +1,60 @@
 - type: job
   parent: CMJobSquadBase
-  id: CMFireteamLeader
-  name: cm-job-name-fireteam-leader
-  description: cm-job-description-fireteam-leader
-  playTimeTracker: CMJobFireteamLeader
+  id: CMCadet
+  name: cm-job-name-cadet
+  description: cm-job-description-cadet
+  playTimeTracker: CMJobCadet
   requirements:
-  - !type:DepartmentTimeRequirement
-    department: CMSquad
-    time: 28800 # 8 hours
-  startingGear: CMGearFireteamLeader
-  icon: "CMJobIconFireteamLeader"
+    - !type:DepartmentTimeRequirement
+      department: CMSquad
+      time: 3600 # 1 hours
+  startingGear: CMGearCadet
+  icon: "CMJobIconEmpty"
   joinNotifyCrew: false
   supervisors: cm-job-supervisors-sl
   accessGroups:
-  - FTL
+  - Rifleman
   special:
   - !type:AddComponentSpecial
     components:
     - type: Skills
-      construction: 2
-      engineer: 2
       firearms: 1
-      jtac: 3
     - type: CMVendorUser
       points: 45
-    - type: BaseGunWhitelist
+    - type: CadetWhitelist
+  hasIcon: false
 
 - type: startingGear
-  id: CMGearFireteamLeader
+  id: CMGearCadet
   equipment:
     jumpsuit: JumpsuitMarine # TODO RMC14 all squad roles should spawn with no jumpsuit but still have clothes on
     back: CMSatchelMarine
-    id: CMDogtagFireteamLeader
+    id: CMDogtagCadet
 
 - type: startingGear
-  id: CMGearFireteamLeaderEquipped
+  id: CMGearCadetEquipped
   equipment:
     jumpsuit: JumpsuitMarine
     back: CMSatchelMarine
     shoes: CMBootsBlackFilled
-    head: CMArmorHelmetM12
-    outerClothing: CMArmorM4
+    head: ArmorHelmetM10
+    outerClothing: CMArmorM3Medium
     gloves: CMHandsBlackMarine
-    id: CMDogtagFireteamLeader
-    ears: CMHeadsetAlphaTeamLeader
+    id: CMDogtagCadet
+    ears: CMHeadsetAlpha
 
 - type: entity
   parent: CMSpawnPointJobBase
-  id: CMSpawnPointFireteamLeader
-  name: fireteam leader spawn point
+  id: CMSpawnPointCadet
+  name: cadet spawn point
   components:
   - type: SpawnPoint
-    job_id: CMFireteamLeader
+    job_id: CMCadet
   - type: Sprite
     layers:
     - sprite: Markers/jobs.rsi
       state: green
-    - state: fireteam_leader
+    - state: rifleman
 
 - type: playTimeTracker
-  id: CMJobFireteamLeader
+  id: CMJobCadet

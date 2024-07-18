@@ -31,6 +31,10 @@
   - type: Appearance
   - type: RMCNameItemOnVend
     item: PrimaryGun
+  - type: GunUserWhitelist
+    whitelist:
+      components:
+      - BaseGunWhitelist
 
 - type: entity
   parent: CMBaseWeaponRifle
@@ -274,3 +278,25 @@
       rmc-aslot-barrel: 1.18, 0.0
       rmc-aslot-rail: 0.225, 0.125
       rmc-aslot-underbarrel: 0.62, -0.31
+
+# Stories
+
+- type: entity
+  parent: WeaponRifleM54C
+  id: CadetWeaponRifleM54C
+  components:
+  - type: GunIFF
+  - type: GunUserWhitelist
+    whitelist:
+      components:
+      - CadetWhitelist
+
+- type: entity
+  parent: WeaponRifleM4SPR
+  id: CadetWeaponRifleM4SPR
+  components:
+  - type: GunIFF
+  - type: GunUserWhitelist
+    whitelist:
+      components:
+      - CadetWhitelist

@@ -4,6 +4,10 @@
   name: cm-job-name-maint-tech
   description: cm-job-description-maint-tech
   playTimeTracker: CMJobMaintTech
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: CMSquad
+      time: 3600 # 1 hours
   startingGear: CMGearMaintTech
   icon: "CMJobIconMaintTech"
   joinNotifyCrew: false
@@ -19,6 +23,7 @@
       engineer: 3
       firearms: 1
       powerLoader: 2
+    - type: BaseGunWhitelist
 
 - type: startingGear
   id: CMGearMaintTech

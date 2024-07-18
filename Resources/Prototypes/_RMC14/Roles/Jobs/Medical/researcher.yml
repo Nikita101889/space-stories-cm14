@@ -24,6 +24,7 @@
       research: 1
       surgery: 2
     - type: RMCUserBulkyArmorIncapable
+    - type: BaseGunWhitelist
 
 - type: startingGear
   id: CMGearResearcher

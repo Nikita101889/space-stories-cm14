@@ -63,6 +63,10 @@
     item: Sidearm
   - type: GunUnskilledPenalty
     angleIncrease: 5
+  - type: GunUserWhitelist
+    whitelist:
+      components:
+      - BaseGunWhitelist
 
 - type: entity
   parent: CMWeaponPistolBase
@@ -235,3 +239,35 @@
       rmc-aslot-barrel: 0.685, 0.125
       rmc-aslot-rail: -0.125, 0.215
       rmc-aslot-underbarrel: 0.284, -0.19
+
+# Stories
+
+- type: entity
+  parent: CMWeaponPistolM1984
+  id: CMCadetWeaponPistolM1984
+  components:
+  - type: GunIFF
+  - type: GunUserWhitelist
+    whitelist:
+      components:
+      - CadetWhitelist
+
+- type: entity
+  parent: CMWeaponPistolM77
+  id: CMCadetWeaponPistolM77
+  components:
+  - type: GunIFF
+  - type: GunUserWhitelist
+    whitelist:
+      components:
+      - CadetWhitelist
+
+- type: entity
+  parent: CMWeaponPistolMK80
+  id: CMCadetWeaponPistolMK80
+  components:
+  - type: GunIFF
+  - type: GunUserWhitelist
+    whitelist:
+      components:
+      - CadetWhitelist

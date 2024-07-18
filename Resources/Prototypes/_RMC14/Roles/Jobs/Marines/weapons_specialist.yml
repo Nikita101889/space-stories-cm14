@@ -30,6 +30,7 @@
       points: 45
       extraPoints:
         Specialist: 120
+    - type: BaseGunWhitelist
 
 - type: startingGear
   id: CMGearWeaponsSpecialist

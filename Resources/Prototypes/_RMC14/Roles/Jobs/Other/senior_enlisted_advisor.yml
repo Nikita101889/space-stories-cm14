@@ -51,6 +51,7 @@
       surgery: 2
       vehicles: 2
     - type: MarineOrders
+    - type: BaseGunWhitelist
 
 - type: startingGear
   id: CMGearSeniorEnlistedAdvisor

@@ -4,6 +4,10 @@
   name: cm-job-name-rifleman
   description: cm-job-description-rifleman
   playTimeTracker: CMJobRifleman
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: CMSquad
+      time: 3600 # 1 hours
   startingGear: CMGearRifleman
   icon: "CMJobIconEmpty"
   joinNotifyCrew: false
@@ -17,6 +21,7 @@
       firearms: 1
     - type: CMVendorUser
       points: 45
+    - type: BaseGunWhitelist
   hasIcon: false
 
 - type: startingGear

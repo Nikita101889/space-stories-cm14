@@ -25,6 +25,7 @@
       vehicle: 1
     - type: CMVendorUser
       points: 45
+    - type: BaseGunWhitelist
 
 - type: startingGear
   id: CMGearCombatTech

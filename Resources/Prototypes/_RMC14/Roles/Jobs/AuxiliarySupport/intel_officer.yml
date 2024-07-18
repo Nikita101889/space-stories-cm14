@@ -28,6 +28,7 @@
       overwatch: 1
       research: 1
     - type: MarineOrders
+    - type: BaseGunWhitelist
 
 - type: startingGear
   id: CMGearIntelOfficer
