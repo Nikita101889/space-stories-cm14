@@ -1,0 +1,15 @@
+- type: entity
+  id: CMEffectShield
+  noSpawn: true
+  components:
+  - type: TimedDespawn
+    lifetime: 3.2
+  - type: Sprite
+    sprite: _RMC14/Effects/xeno_empower.rsi
+    noRot: true
+    state: empower
+    drawdepth: Effects
+  - type: EffectVisuals
+  - type: Tag
+    tags:
+    - HideContextMenu

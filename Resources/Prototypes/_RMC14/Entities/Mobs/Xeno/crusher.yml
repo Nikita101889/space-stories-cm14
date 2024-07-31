@@ -30,7 +30,7 @@
     - ActionXenoTailStab
     - ActionXenoCharge
     - ActionXenoStomp
-    #    - ActionXenoDefensiveShield
+    - ActionXenoDefensiveShield
     - ActionXenoDevolve
     tier: 3
     hudOffset: 0,0.375
@@ -48,6 +48,7 @@
       types:
         Blunt: 60
         Structural: 750
+  - type: XenoShield
   - type: XenoAnimateMovement
   - type: XenoPlasma
     plasma: 400
