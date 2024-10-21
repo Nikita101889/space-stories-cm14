@@ -290,8 +290,7 @@ public sealed class CMDistressSignalRuleSystem : GameRuleSystem<CMDistressSignal
 
                 var profile = GameTicker.GetPlayerProfile(player);
                 var coordinates = _transform.GetMoverCoordinates(spawner);
-                var jobComp = new JobComponent { Prototype = comp.SurvivorJob };
-                var survivorMob = _stationSpawning.SpawnPlayerMob(coordinates, jobComp, profile, null);
+                var survivorMob = _stationSpawning.SpawnPlayerMob(coordinates, comp.SurvivorJob, profile, null);
 
                 if (!_mind.TryGetMind(playerId, out var mind))
                     mind = _mind.CreateMind(playerId);
@@ -299,8 +298,7 @@ public sealed class CMDistressSignalRuleSystem : GameRuleSystem<CMDistressSignal
                 RemCompDeferred<TacticalMapUserComponent>(survivorMob);
                 _mind.TransferTo(mind.Value, survivorMob);
 
-                if (!HasComp<JobComponent>(mind.Value))
-                    _roles.MindAddRole(mind.Value, jobComp, silent: false);
+                _roles.MindAddJobRole(mind.Value, jobPrototype: comp.SurvivorJob);
 
                 _playTimeTracking.PlayerRolesChanged(player);
                 return playerId;
@@ -540,7 +538,7 @@ public sealed class CMDistressSignalRuleSystem : GameRuleSystem<CMDistressSignal
 
     private void OnPlayerSpawning(PlayerSpawningEvent ev)
     {
-        if (ev.Job?.Prototype is not { } jobId ||
+        if (ev.Job is not { } jobId ||
             !_prototypes.TryIndex(jobId, out var job) ||
             !job.IsCM)
         {
@@ -576,7 +574,7 @@ public sealed class CMDistressSignalRuleSystem : GameRuleSystem<CMDistressSignal
 
             if (squad != null)
             {
-                _squad.AssignSquad(ev.SpawnResult.Value, squad.Value, ev.Job?.Prototype);
+                _squad.AssignSquad(ev.SpawnResult.Value, squad.Value, jobId);
 
                 // TODO RMC14 add this to the map file
                 if (TryComp(spawner, out TransformComponent? xform) &&

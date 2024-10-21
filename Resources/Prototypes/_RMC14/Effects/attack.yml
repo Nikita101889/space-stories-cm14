@@ -1,7 +1,7 @@
 ﻿- type: entity
   # Just fades out with no movement animation
   id: CMEffectPunch
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: TimedDespawn
     lifetime: 0.4
@@ -15,8 +15,9 @@
     - HideContextMenu
 
 - type: entity
-  id: CMEffectSlash
-  noSpawn: true
+  # Just fades out with no movement animation
+  id: CMEffectGrab
+  categories: [ HideSpawnMenu ]
   components:
   - type: TimedDespawn
     lifetime: 0.299
