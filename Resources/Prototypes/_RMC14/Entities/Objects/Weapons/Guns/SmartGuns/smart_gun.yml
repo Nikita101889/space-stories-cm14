@@ -21,6 +21,9 @@
       map: [ "enum.GunVisualLayers.Base" ]
     - state: mag-0
       map: [ "enum.GunVisualLayers.Mag" ]
+    - sprite: _RMC14/Objects/Weapons/Guns/Attachments/barrel.rsi
+      state: m56_barrel
+      offset: 0.625, 0
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/SmartGuns/smart_gun.rsi
   - type: MeleeWeapon
@@ -116,7 +119,7 @@
           - RMCAttachmentRailFlashlight
   - type: AttachableHolderVisuals
     offsets:
-      rmc-aslot-rail: -0.1875, 0.125
+      rmc-aslot-rail: 0.3125, 0.00
   - type: Construction
     graph: SmartGunConstruct
     node: start
