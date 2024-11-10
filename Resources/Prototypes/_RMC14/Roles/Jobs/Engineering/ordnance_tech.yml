@@ -33,6 +33,7 @@
         RMCSkillPowerLoader: 2
     - type: JobPrefix
       prefix: "OT"
+  hidden: true # TODO RMC14
 
 - type: startingGear
   id: CMGearOrdnanceTech
