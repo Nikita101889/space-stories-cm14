@@ -249,7 +249,7 @@ public abstract class SharedDropshipSystem : EntitySystem
         if (!HasComp<DropshipDestinationComponent>(destination))
         {
             Log.Warning(
-                $"{ToPrettyString(args.Actor)} попытка запуска с недопустимого места назначения дропшипа {ToPrettyString(destination)}");
+                $"{ToPrettyString(args.Actor)} tried to launch to invalid dropship destination {ToPrettyString(destination)}");
             return;
         }
 
@@ -263,14 +263,14 @@ public abstract class SharedDropshipSystem : EntitySystem
 
         if (!TryGetEntity(args.Destination, out var destination))
         {
-            Log.Warning($"{ToPrettyString(args.Actor)} попытка перехвата в недопустимом направлении");
+            Log.Warning($"{ToPrettyString(args.Actor)} tried to hijack to invalid destination");
             return;
         }
 
         if (!HasComp<DropshipHijackDestinationComponent>(destination))
         {
             Log.Warning(
-                $"{ToPrettyString(args.Actor)} попытка перехвата в недопустимом направлении {ToPrettyString(destination)}");
+                $"{ToPrettyString(args.Actor)} tried to hijack to invalid destination {ToPrettyString(destination)}");
             return;
         }
 

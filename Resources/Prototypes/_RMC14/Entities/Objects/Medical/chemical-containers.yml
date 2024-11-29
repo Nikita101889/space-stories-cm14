@@ -7,7 +7,7 @@
     - type: SolutionContainerManager
       solutions:
         beaker:
-          maxVol: 1000
+          maxVol: 200
     - type: Sprite
       sprite: Objects/Specific/Chemistry/jug.rsi
       layers:
@@ -56,7 +56,7 @@
       thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 1000
+          damage: 200
         behaviors:
           - !type:DoActsBehavior
             acts: [ "Destruction" ]
@@ -101,7 +101,7 @@
         beaker:
           reagents:
             - ReagentId: RMCCarbon
-              Quantity: 1000
+              Quantity: 200
 
 - type: entity
   parent: RMCJug
@@ -117,7 +117,7 @@
         beaker:
           reagents:
             - ReagentId: RMCFluorine
-              Quantity: 1000
+              Quantity: 200
 
 - type: entity
   parent: RMCJug
@@ -133,7 +133,7 @@
         beaker:
           reagents:
             - ReagentId: RMCChlorine
-              Quantity: 1000
+              Quantity: 200
 
 - type: entity
   parent: RMCJug
@@ -149,7 +149,7 @@
         beaker:
           reagents:
             - ReagentId: RMCAluminum
-              Quantity: 1000
+              Quantity: 200
 
 - type: entity
   parent: RMCJug
@@ -165,7 +165,7 @@
         beaker:
           reagents:
             - ReagentId: RMCPhosphorus
-              Quantity: 1000
+              Quantity: 200
 
 - type: entity
   parent: RMCJug
@@ -181,7 +181,7 @@
         beaker:
           reagents:
             - ReagentId: RMCSulfur
-              Quantity: 1000
+              Quantity: 200
 
 - type: entity
   parent: RMCJug
@@ -197,7 +197,7 @@
         beaker:
           reagents:
             - ReagentId: RMCSilicon
-              Quantity: 1000
+              Quantity: 200
 
 - type: entity
   parent: RMCJug
@@ -213,7 +213,7 @@
         beaker:
           reagents:
             - ReagentId: RMCHydrogen
-              Quantity: 1000
+              Quantity: 200
 
 - type: entity
   parent: RMCJug
@@ -229,7 +229,7 @@
         beaker:
           reagents:
             - ReagentId: RMCLithium
-              Quantity: 1000
+              Quantity: 200
 
 - type: entity
   parent: RMCJug
@@ -245,7 +245,7 @@
         beaker:
           reagents:
             - ReagentId: RMCSodium
-              Quantity: 1000
+              Quantity: 200
 
 - type: entity
   parent: RMCJug
@@ -261,7 +261,7 @@
         beaker:
           reagents:
             - ReagentId: RMCPotassium
-              Quantity: 1000
+              Quantity: 200
 
 - type: entity
   parent: RMCJug
@@ -277,7 +277,7 @@
         beaker:
           reagents:
             - ReagentId: RMCRadium
-              Quantity: 1000
+              Quantity: 200
 
 - type: entity
   parent: RMCJug
@@ -293,7 +293,7 @@
         beaker:
           reagents:
             - ReagentId: RMCIron
-              Quantity: 1000
+              Quantity: 200
 
 - type: entity
   parent: RMCJug
@@ -309,7 +309,7 @@
         beaker:
           reagents:
             - ReagentId: RMCCopper
-              Quantity: 1000
+              Quantity: 200
 
 - type: entity
   parent: RMCJug
@@ -325,7 +325,7 @@
         beaker:
           reagents:
             - ReagentId: RMCGold
-              Quantity: 1000
+              Quantity: 200
 
 - type: entity
   parent: RMCJug
@@ -341,7 +341,7 @@
         beaker:
           reagents:
             - ReagentId: RMCMercury
-              Quantity: 1000
+              Quantity: 200
 
 - type: entity
   parent: RMCJug
@@ -357,7 +357,7 @@
         beaker:
           reagents:
             - ReagentId: RMCSilver
-              Quantity: 1000
+              Quantity: 200
 
 - type: entity
   parent: RMCJug
@@ -373,7 +373,7 @@
         beaker:
           reagents:
             - ReagentId: RMCEthanol
-              Quantity: 1000
+              Quantity: 200
 
 - type: entity
   parent: RMCJug
@@ -389,7 +389,7 @@
         beaker:
           reagents:
             - ReagentId: RMCSugar
-              Quantity: 1000
+              Quantity: 200
 
 - type: entity
   parent: RMCJug
@@ -405,7 +405,7 @@
         beaker:
           reagents:
             - ReagentId: RMCNitrogen
-              Quantity: 1000
+              Quantity: 200
 
 - type: entity
   parent: RMCJug
@@ -421,7 +421,7 @@
         beaker:
           reagents:
             - ReagentId: RMCOxygen
-              Quantity: 1000
+              Quantity: 200
 
 - type: entity
   parent: RMCJug
@@ -437,7 +437,7 @@
         beaker:
           reagents:
             - ReagentId: Water
-              Quantity: 1000
+              Quantity: 200
 
 - type: entity
   parent: RMCJug
@@ -453,4 +453,4 @@
         beaker:
           reagents:
             - ReagentId: RMCSulphuricAcid
-              Quantity: 1000
+              Quantity: 200

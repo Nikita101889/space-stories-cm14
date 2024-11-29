@@ -12,7 +12,6 @@ using Content.Shared._RMC14.Xenonids.Projectile.Spit.Shield;
 using Content.Shared._RMC14.Xenonids.Projectile.Spit.Slowing;
 using Content.Shared._RMC14.Xenonids.Projectile.Spit.Stacks;
 using Content.Shared._RMC14.Xenonids.Projectile.Spit.Standard;
-using Content.Shared._RMC14.Xenonids.Projectile.Spit.Bombard;
 using Content.Shared.ActionBlocker;
 using Content.Shared.Chemistry.EntitySystems;
 using Content.Shared.Coordinates;
@@ -71,8 +70,6 @@ public sealed class XenoSpitSystem : EntitySystem
         SubscribeLocalEvent<XenoActiveChargingSpitComponent, CMGetArmorEvent>(OnActiveChargingSpitGetArmor);
         SubscribeLocalEvent<XenoActiveChargingSpitComponent, RefreshMovementSpeedModifiersEvent>(OnActiveChargingSpitRefreshSpeed);
         SubscribeLocalEvent<XenoActiveChargingSpitComponent, XenoGetSpitProjectileEvent>(OnActiveChargingSpitGetProjectile);
-        SubscribeLocalEvent<XenoBombardSpitComponent, XenoBombardSpitActionEvent>(OnXenoBombardSpitAction);
-        SubscribeLocalEvent<XenoBombardSpitComponent, XenoBombardSpitDoAfterEvent>(OnXenoBombardSpitDoAfterEvent);
 
         SubscribeLocalEvent<XenoSlowingSpitProjectileComponent, ProjectileHitEvent>(OnXenoSlowingSpitHit, after: [typeof(CMClusterGrenadeSystem)]);
 
@@ -177,39 +174,6 @@ public sealed class XenoSpitSystem : EntitySystem
         );
     }
 
-    private void OnXenoBombardSpitAction(Entity<XenoBombardSpitComponent> xeno, ref XenoBombardSpitActionEvent args)
-    {
-        if (args.Handled)
-            return;
-
-        args.Handled = true;
-
-        var ev = new XenoBombardSpitDoAfterEvent(GetNetCoordinates(args.Target));
-        var doAfter = new DoAfterArgs(EntityManager, xeno, xeno.Comp.BombardDelay, ev, xeno)
-        {
-            BreakOnMove = true,
-            Hidden = true,
-        };
-        _doAfter.TryStartDoAfter(doAfter);
-    }
-
-    private void OnXenoBombardSpitDoAfterEvent(Entity<XenoBombardSpitComponent> xeno, ref XenoBombardSpitDoAfterEvent args)
-    {
-        if (args.Cancelled)
-            return;
-
-        args.Handled = _xenoProjectile.TryShoot(
-            xeno,
-            GetCoordinates(args.Coordinates),
-            xeno.Comp.PlasmaCost,
-            xeno.Comp.ProjectileId,
-            xeno.Comp.Sound,
-            1,
-            Angle.Zero,
-            xeno.Comp.Speed
-        );
-    }
-
     private void OnXenoChargeSpitAction(Entity<XenoChargeSpitComponent> xeno, ref XenoChargeSpitActionEvent args)
     {
         if (args.Handled)
@@ -245,7 +209,6 @@ public sealed class XenoSpitSystem : EntitySystem
         if (spit.Comp.Slow > TimeSpan.Zero)
         {
             EnsureComp<SlowedBySpitComponent>(target).ExpiresAt = _timing.CurTime + spit.Comp.Slow;
-            EnsureComp<SlowedBySpitComponent>(target).Multiplier = spit.Comp.SlowMultiplier;
             _movementSpeed.RefreshMovementSpeedModifiers(target);
         }
 

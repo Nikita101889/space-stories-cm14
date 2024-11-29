@@ -15,7 +15,7 @@
     jobs:
     - CMFireteamLeader
     sections:
-    - name: Взрвчатка
+    - name: Explosives
       entries:
       - id: CMPacketGrenadeHighExplosiveFilled
         points: 18
@@ -37,7 +37,7 @@
     #  points: 20
     #- id: CMM40MFHSMetalFoamGrenade
     #  points: 5
-    - name: Основные боеприпасы
+    - name: Primary Ammunition
       entries:
       - id: CMMagazineRifleM4SPRAP
         points: 10
@@ -49,7 +49,7 @@
         points: 10
       - id: CMMagazineRifleM54CExt
         points: 10
-    - name: Боеприпасы вторичного оружия
+    - name: Sidearm Ammunition
       entries:
       - id: RMCSpeedLoader44Marksman
         points: 10
@@ -71,11 +71,11 @@
         points: 15
     #- id: CMM79GrenadeLauncher
     #  points: 30
-    - name: Броня
+    - name: Armors
       entries:
       - id: CMArmorB12
         points: 30
-    - name: Предметы одежды
+    - name: Clothing Items
       entries:
       - id: RMCScabbardMacheteFilled
         points: 5
@@ -93,7 +93,7 @@
         points: 3
     #- id: CMNightVisionOptic
     #  points: 30
-    - name: Инженерные принадлежности
+    - name: Engineering Supplies
       entries:
 #      - id: Plastic Explosive
 #        points: 10
@@ -105,7 +105,7 @@
 #        points: 10
       - id: CMWelderSmall
         points: 5
-    - name: Утилиты
+    - name: Utilities
       entries:
       - id: RMCMotionDetector
         points: 15
@@ -118,17 +118,17 @@
         points: 5
       - id: RMCWhistle
         points: 5
-    - name: Бинокли
+    - name: Binoculars
       entries:
       - id: RMCBinoculars
         points: 5
-    - name: Оптика для шлема
+    - name: Helmet Optics
       entries: [ ]
     #- id: CMMedicalHelmetOptic
     #  points: 15
     #- id: CMWeldingVisor
     #  points: 5
-    - name: Радиоключи
+    - name: Radio Keys
       entries:
       - id: CMEncryptionKeyEngineer
         points: 5
@@ -154,7 +154,7 @@
     jobs:
     - CMFireteamLeader
     sections:
-    - name: Стандартное оборудование
+    - name: Standard Equipment
       takeAll: CMStandard
       entries:
       - id: CMVendorBundleFireteamLeaderApparel
@@ -162,7 +162,7 @@
       - id: CMMRE
       #- id: CMMap # TODO: Make a map
       - id: RMCVendorBundleCrewFireteamLeader
-    - name: Пояс
+    - name: Belt
       choices: { CMBelt: 1 }
       entries:
       - id: RMCBeltUtilityGeneral
@@ -177,20 +177,20 @@
       - id: CMBeltUtilityFilled
         recommended: true
       - id: RMCBeltGrenade
-    - name: подсумок
+    - name: Pouches
       choices: { RMCPouch: 2 }
       entries:
       - id: RMCPouchFirstAidInjectors
-        name: подсумок первой помощи (многоразовые инъекторы)
+        name: first-aid pouch (refillable injectors)
         recommended: true
       - id: RMCPouchFirstAidSplintsGauzeOintment
-        name: подсумок первой помощи (марля, мазь) # TODO RMC14 splints comma
+        name: first-aid pouch (gauze, ointment) # TODO RMC14 splints comma
         recommended: true
       - id: RMCPouchFirstAidPills
-        name: подсумок первой помощи (таблетки)
+        name: first-aid pouch (pills)
       - id: RMCPouchFirstResponder
       - id: RMCPouchFlareFilled
-        name: подсумок фаеров (полный)
+        name: Flare pouch (Full)
       #- id: CMFuelTankStrapPouch
       - id: RMCPouchGeneralLarge
       #- id: CMSlingPouch

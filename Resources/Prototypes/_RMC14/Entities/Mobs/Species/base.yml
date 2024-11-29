@@ -182,7 +182,7 @@
   - type: AffectableByWeeds
   - type: UserIFF
   - type: UserLimitHits
-  # - type: MovementIgnoreGravity Stories-Fix
+  - type: MovementIgnoreGravity
   - type: SlowOnPull
     slowdowns:
     - multiplier: 0.7575

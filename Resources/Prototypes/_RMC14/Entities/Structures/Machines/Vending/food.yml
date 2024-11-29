@@ -10,7 +10,7 @@
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/food.rsi
   - type: CMAutomatedVendor
     sections:
-    - name: Готовые блюда
+    - name: Prepared Meals
       entries:
       - id: CMMRE
         name: UNMC Meal Ready to Eat
@@ -29,7 +29,7 @@
         amount: 15
       - id: CMMarineProteinBar
         amount: 50
-    - name: Фляжки
+    - name: Flasks
       entries:
       - id: CMCanteen
         amount: 10

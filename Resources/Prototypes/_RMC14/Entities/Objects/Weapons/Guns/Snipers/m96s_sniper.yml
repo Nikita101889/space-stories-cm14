@@ -226,10 +226,12 @@
         Piercing: 110 # TODO RMC14 55 when aimed shot is in please someone help im dying
   - type: CMArmorPiercing
     amount: 0
-  - type: XenoSlowingSpitProjectile
-    slow: 3
-    slowMultiplier: 0.75
-    paralyze: 0
+  - type: RMCStunOnHit
+    maxRange: 64
+    losesEffectWithRange: true
+    stunTime: 0.0
+    superSlowTime: 4
+    slowTime: 10
 
 - type: Tag
   id: CMM96SSniperRifle

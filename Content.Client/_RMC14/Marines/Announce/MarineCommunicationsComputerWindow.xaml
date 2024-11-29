@@ -23,6 +23,6 @@
             <cc:HSeparator Color="#4972A1" Margin="0 5" />
         </BoxContainer>
         <TextEdit Name="Text" Access="Public" HorizontalExpand="True" VerticalExpand="True" />
-        <Button Name="Send" Access="Public" Text="Отправить" HorizontalExpand="True" />
+        <Button Name="Send" Access="Public" Text="Send" HorizontalExpand="True" />
     </BoxContainer>
 </controls:MarineCommunicationsComputerWindow>

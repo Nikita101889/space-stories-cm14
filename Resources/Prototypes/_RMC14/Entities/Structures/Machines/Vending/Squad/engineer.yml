@@ -55,14 +55,14 @@
         points: 5
         recommended: true
       - id: CMSandbagEmpty25
-        name: мешки с песком x25
+        name: sandbags x25
         points: 10
         recommended: true
       - id: RMCPowerCellSuper
         points: 10
     #- id: CMES11MobileFuelCanister
     #  points: 4
-    - name: Взрвчатка
+    - name: Explosives
       entries:
       - id: CMPacketGrenadeHighExplosiveFilled
         points: 18
@@ -96,7 +96,7 @@
         points: 6
       - id: CMMagazineRifleM54CExt
         points: 6
-    - name: Боеприпасы вторичного оружия
+    - name: Sidearm Ammunition
       entries:
       - id: RMCSpeedLoader44Marksman
         points: 6
@@ -104,7 +104,7 @@
         points: 3
       - id: RMCMagazinePistolSU6
         points: 6
-    - name: Броня
+    - name: Armors
       entries:
       - id: CMArmorB12
         points: 24
@@ -122,7 +122,7 @@
     #  points: 24
     #- id: CMM56DHeavyMachineGun
     #  points: 24
-    - name: Предметы одежды
+    - name: Clothing Items
       entries:
       - id: RMCScabbardMacheteFilled
         points: 6
@@ -138,7 +138,7 @@
         points: 6
       - id: CMBeltUtilityCombat
         points: 15
-    - name: Утилиты
+    - name: Utilities
       entries:
       - id: CMRollerBedSpawnFolded
         points: 5
@@ -150,7 +150,7 @@
         points: 8
       - id: RMCWhistle
         points: 3
-    - name: Бинокли
+    - name: Binoculars
       entries:
       - id: RMCBinoculars
         points: 5
@@ -190,13 +190,13 @@
     jobs:
     - CMCombatTech
     sections:
-    - name: Стандартное оборудование
+    - name: Standard Equipment
       takeAll: CMStandard
       entries:
       - id: CMVendorBundleCombatTechnicianApparel
       - id: CMMRE
       #- id: CMMap # TODO: Make a map
-    - name: Броня
+    - name: Armor
       choices: { CMArmor: 1 }
       entries:
       - id: RMCArmorM3LightVariants
@@ -217,7 +217,7 @@
       - id: RMCSatchelWelder
       - id: RMCSatchelWelderChestrig
         recommended: true
-    - name: Пояс
+    - name: Belt
       choices: { CMBelt: 1 }
       entries:
       - id: RMCBeltUtilityGeneral
@@ -232,24 +232,24 @@
       - id: CMBeltUtilityFilled
         recommended: true
       - id: RMCBeltGrenade
-    - name: подсумок
+    - name: Pouches
       choices: { RMCPouch: 2 }
       entries:
       - id: RMCPouchConstruction
         recommended: true
       - id: RMCPouchFirstAidInjectors
-        name: подсумок первой помощи (многоразовые инъекторы)
+        name: first-aid pouch (refillable injectors)
         recommended: true
       - id: RMCPouchFirstAidSplintsGauzeOintment
-        name: подсумок первой помощи (марля, мазь) # TODO RMC14 splints comma
+        name: first-aid pouch (gauze, ointment) # TODO RMC14 splints comma
         recommended: true
       - id: RMCPouchFirstAidPills
-        name: подсумок первой помощи (таблетки)
+        name: first-aid pouch (pills)
         recommended: true
       #- id: CMElectronicsPouchFull
       - id: RMCPouchExplosive
       - id: RMCPouchFlareFilled
-        name: подсумок фаеров (полный)
+        name: Flare pouch (Full)
       - id: RMCPouchMagazinePistolLarge
       - id: RMCPouchMagazine
       - id: RMCPouchShotgun

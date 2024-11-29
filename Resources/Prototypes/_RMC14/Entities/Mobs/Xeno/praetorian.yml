@@ -135,7 +135,6 @@
   - type: XenoShield
     shield: Praetorian
   - type: XenoAcidBall
-  - type: XenoDash
   - type: XenoEvolution
     strains:
     - RMCXenoPraetorianWarden

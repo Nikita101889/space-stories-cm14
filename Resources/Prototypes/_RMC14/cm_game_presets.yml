@@ -4,9 +4,9 @@
   - distresssignal
   - cmdistresssignal
   - cmds
-  name: Сигнал Бедствия
-  description: Ответьте на сигнал бедствия, посланный соседней планетой.
-  showInVote: true
+  name: rmc-distress-signal-title
+  description: rmc-distress-signal-description
+  showInVote: false
   rules:
   - CMDistressSignal
 

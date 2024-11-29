@@ -107,7 +107,7 @@
     #    CMM74AGMSmokeAirburstPacketx3airburstgrenades: 10P
     #    CMM74AGMHornetAirburstPacketx3airburstgrenades: 20P
     #    CMM20MineBoxx4mines: 20P
-    - name: Основные боеприпасы
+    - name: Primary Ammunition
       entries:
       - id: CMMagazineRifleM4SPRAP
         points: 6
@@ -119,7 +119,7 @@
         points: 6
       - id: CMMagazineRifleM54CExt
         points: 6
-    - name: Боеприпасы вторичного оружия
+    - name: Sidearm Ammunition
       entries:
       - id: RMCSpeedLoader44Marksman
         points: 6
@@ -127,7 +127,7 @@
         points: 3
       - id: RMCMagazinePistolSU6
         points: 6
-    - name: Броня
+    - name: Armors
       entries:
       - id: CMArmorB12
         points: 28
@@ -139,14 +139,14 @@
         points: 8
       - id: RMCSmartPistolCase
         points: 12
-    - name: Предметы одежды
+    - name: Clothing Items
       entries:
       - id: RMCPouchMacheteFilled
         points: 8
       - id: RMCBackpackRTO
         points: 15
     #    CMWeldingGoggles: 3P
-    - name: Утилиты
+    - name: Utilities
       entries:
       - id: CMFireExtinguisherPortable
         points: 3
@@ -154,7 +154,7 @@
         points: 8
       - id: RMCWhistle
         points: 3
-    - name: Бинокли
+    - name: Binoculars
       entries:
       - id: RMCBinoculars
         points: 5
@@ -195,7 +195,7 @@
     jobs:
     - CMHospitalCorpsman
     sections:
-    - name: Стандартное оборудование
+    - name: Standard Equipment
       takeAll: CMStandard
       entries:
       - id: CMVendorBundleSquadMedicalApparel
@@ -219,7 +219,7 @@
       - id: CMBackpackMarineMedic
       - id: CMSatchelMarineMedic
         recommended: true
-    - name: Пояс
+    - name: Belt
       choices: { CMBelt: 1 }
       entries:
       - id: CMBeltMedicBagFilled
@@ -251,13 +251,13 @@
       - id: RMCPouchMedical
         recommended: true # TODO unrecommend when medkit pouch is real
       - id: RMCPouchFirstAidInjectors
-        name: подсумок первой помощи (многоразовые инъекторы)
+        name: first-aid pouch (refillable injectors)
       - id: RMCPouchFirstAidSplintsGauzeOintment
-        name: подсумок первой помощи (марля, мазь) # TODO RMC14 splints comma
+        name: first-aid pouch (gauze, ointment) # TODO RMC14 splints comma
       - id: RMCPouchFirstAidPills
         name: first-aid pouch (pills)
       - id: RMCPouchFlareFilled
-        name: подсумок фаеров (полный)
+        name: Flare pouch (Full)
       - id: RMCPouchGeneralLarge
      #- id: CMSlingPouch
       - id: RMCPouchMagazinePistolLarge

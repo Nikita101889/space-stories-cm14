@@ -13,7 +13,7 @@
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/guns.rsi
   - type: CMAutomatedVendor
     sections:
-    - name: Основное огнестрельное оружие
+    - name: Primary firearms
       entries:
       - id: WeaponRifleM4SPR
         amount: 10
@@ -24,7 +24,7 @@
       - id: WeaponRifleM54C
         amount: 30
         recommended: true
-    - name: Основные боеприпасы
+    - name: Primary ammunition
       entries:
       - id: RMCBoxShotgunFlechette
         amount: 4
@@ -38,7 +38,7 @@
         amount: 25
       - id: CMMagazineRifleM54C
         amount: 25
-    - name: Вторичное оружие
+    - name: Sidearms
       entries:
       - id: CMWeaponPistolM77
         amount: 25
@@ -48,7 +48,7 @@
         amount: 25
       #- id: WeaponFlareM82F
       #  amount: 10
-    - name: Боеприпасы вторичного оружия
+    - name: Sidearm ammunition
       entries:
       - id: CMMagazinePistolM77AP
         amount: 25
@@ -56,7 +56,7 @@
         amount: 20
       - id: CMMagazinePistolM1984
         amount: 25
-    - name: Обвесы
+    - name: Attachments
       entries:
       - id: RMCAttachmentM63StockCollapsible
         amount: 10
@@ -70,7 +70,7 @@
         recommended: true
       - id: RMCAttachmentU1GrenadeLauncher
         amount: 25
-    - name: Утилиты
+    - name: Utilities
       entries:
       - id: RMCM5Bayonet
         amount: 25
@@ -92,7 +92,7 @@
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/clothing.rsi
   - type: CMAutomatedVendor
     sections:
-    - name: Стандартное оборудование
+    - name: Standard Equipment
       entries:
       - id: CMBootsBlack
         amount: 15
@@ -108,7 +108,7 @@
         amount: 15
       - id: ArmorHelmetM10
         amount: 15
-    - name: Разгрузка
+    - name: Webbings
       entries:
       - id: CMWebbingBrown
         amount: 1
@@ -138,7 +138,7 @@
         amount: 10
       - id: CMArmorM3Light
         amount: 10
-    - name: Рюкзаки
+    - name: Backpack
       entries:
       - id: CMBackpackMarine
         amount: 15
@@ -185,7 +185,7 @@
 #      - id: M276 Pattern M82F Holster Rig
 #        amount: 5
       - id: CMBeltKnifeFilled
-        name: ножевая установка M276 (полная)
+        name: M276 Knife Rig (Full)
         amount: 15
       - id: RMCBeltUtilityGeneral
         amount: 15
@@ -201,7 +201,7 @@
         name: First-Aid Pouch (Pill Packets)
         amount: 15
       - id: RMCPouchFlareFilled
-        name: подсумок фаеров (полный)
+        name: Flare Pouch (Full)
         amount: 15
       - id: RMCPouchDocumentSmall
         amount: 15
@@ -230,7 +230,7 @@
         amount: 1
 #      - id: Sling Pouch
 #        amount: 1
-    - name: Маски
+    - name: Mask
       entries:
       - id: CMMaskGas
         amount: 15
@@ -287,7 +287,7 @@
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/requisitions_ammo.rsi
   - type: CMAutomatedVendor
     sections:
-    - name: Броня-Piercing Ammunition
+    - name: Armor-Piercing Ammunition
       entries:
       - id: CMMagazineRifleM4SPRAP
         amount: 4

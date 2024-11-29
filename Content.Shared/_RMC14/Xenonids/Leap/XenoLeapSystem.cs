@@ -178,57 +178,7 @@ public sealed class XenoLeapSystem : EntitySystem
 
     private void OnXenoLeapingDoHit(Entity<XenoLeapingComponent> xeno, ref StartCollideEvent args)
     {
-        var other = args.OtherEntity;
-        if (xeno.Comp.KnockedDown)
-            return;
-
-        if (!HasComp<MobStateComponent>(other) || _mobState.IsIncapacitated(other))
-            return;
-
-        if (_standing.IsDown(other))
-            return;
-
-        if (_hive.FromSameHive(xeno.Owner, other))
-        {
-            StopLeap(xeno);
-            return;
-        }
-
-        if (HasComp<LeapIncapacitatedComponent>(other))
-            return;
-
-        xeno.Comp.KnockedDown = true;
-        Dirty(xeno);
-
-        if (_physicsQuery.TryGetComponent(xeno, out var physics))
-        {
-            _physics.SetBodyStatus(xeno, physics, BodyStatus.OnGround);
-
-            if (physics.Awake)
-                _broadphase.RegenerateContacts(xeno, physics);
-        }
-
-        if (!xeno.Comp.KnockdownRequiresInvisibility || HasComp<XenoActiveInvisibleComponent>(xeno))
-        {
-            var victim = EnsureComp<LeapIncapacitatedComponent>(other);
-            victim.RecoverAt = _timing.CurTime + xeno.Comp.ParalyzeTime;
-            Dirty(other, victim);
-
-            if (_net.IsServer)
-                _stun.TryParalyze(other, xeno.Comp.ParalyzeTime, true);
-        }
-
-        _stun.TrySlowdown(xeno, xeno.Comp.MoveDelayTime, false, 0f, 0f);
-        var ev = new XenoLeapHitEvent(xeno, other);
-        RaiseLocalEvent(xeno, ref ev);
-
-        if (!xeno.Comp.PlayedSound)
-        {
-            xeno.Comp.PlayedSound = true;
-            _audio.PlayPredicted(xeno.Comp.LeapSound, xeno, xeno);
-        }
-
-        StopLeap(xeno);
+        ApplyLeapingHitEffects(xeno, args.OtherEntity);
     }
 
     private void OnXenoLeapingRemove(Entity<XenoLeapingComponent> ent, ref ComponentRemove args)

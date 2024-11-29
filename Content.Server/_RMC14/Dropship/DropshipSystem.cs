@@ -252,7 +252,7 @@ public sealed class DropshipSystem : SharedDropshipSystem
 
         if (user != null && hijack)
         {
-            var xenoText = "Королева приказала металлической птице отправиться в небесный металлический улей! Радуйтесь!";
+            var xenoText = "The Queen has commanded the metal bird to depart for the metal hive in the sky! Rejoice!";
             _xenoAnnounce.AnnounceSameHive(user.Value, xenoText);
             _audio.PlayPvs(dropship.LocalHijackSound, dropshipId.Value);
 

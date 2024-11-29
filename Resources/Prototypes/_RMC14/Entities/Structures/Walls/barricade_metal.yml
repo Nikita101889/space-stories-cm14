@@ -33,7 +33,7 @@
     southDrawDepth: OverMobs
   - type: Barricade
   - type: Damageable
-    damageContainer: StructuralInorganic
+    damageContainer: Inorganic
     damageModifierSet: CMBarricade
   - type: InteractionOutline
   - type: RMCDropshipBlocked
@@ -177,7 +177,7 @@
       - state: burn_upgrade
       - map: [ "acided" ]
     - type: Damageable
-      damageContainer: StructuralInorganic
+      damageContainer: Inorganic
       damageModifierSet: CMBurnBarricade
     - type: DamageVisuals
       thresholds: [4, 8, 12]
@@ -200,7 +200,7 @@
       - state: brute_upgrade
       - map: [ "acided" ]
     - type: Damageable
-      damageContainer: StructuralInorganic
+      damageContainer: Inorganic
       damageModifierSet: CMBruteBarricade
     - type: DamageVisuals
       thresholds: [4, 8, 12]

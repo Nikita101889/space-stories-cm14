@@ -133,25 +133,6 @@
     max: 4
 
 - type: entity
-  id: XenoIchorSpitProjectile
-  parent: XenoBaseProjectile
-  name: ichor spit
-  categories:
-  - HideSpawnMenu
-  components:
-  - type: Sprite
-    sprite: _RMC14/Objects/Xeno/xeno_projectiles.rsi
-    layers:
-    - state: xeno_acid
-  - type: Projectile
-    impactEffect: null
-    damage:
-      types:
-        Caustic: 30
-  - type: XenoProjectile
-    deleteOnFriendlyXeno: true
-
-- type: entity
   id: XenoBoneChipsProjectile
   parent: XenoBaseProjectile
   name: bone chips

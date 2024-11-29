@@ -150,6 +150,21 @@
     checkCanAccess: false
 
 - type: entity
+  parent: ActionXenoLeap
+  id: ActionXenoDash
+  name: Dash (40)
+  description: Dash a short distance towards a given location.
+  components:
+  - type: WorldTargetAction
+    itemIconStyle: NoItem
+    icon:
+      sprite: _RMC14/Actions/xeno_actions.rsi
+      state: prae_dash
+    event: !type:XenoLeapActionEvent
+    useDelay: 11
+    checkCanAccess: false
+
+- type: entity
   id: ActionXenoHeadbutt
   parent: ActionXenoBase
   name: Headbutt (10) # TODO RMC14 proper plasma costs
@@ -519,22 +534,6 @@
     - ActionXenoSprayAcidBoiler
     cooldown: 30
     onPerform: false
-
-- type: entity
-  id: ActionXenoDash
-  parent: ActionXenoBase
-  name: Dash (40)
-  description: Dash a short distance at a desired location of your choice.
-  components:
-  - type: WorldTargetAction
-    itemIconStyle: NoItem
-    icon:
-      sprite: _RMC14/Actions/xeno_actions.rsi
-      state: prae_dash
-    event: !type:XenoDashActionEvent
-    range: 15
-    useDelay: 10
-    checkCanAccess: false
 
 - type: entity
   parent: ActionXenoBase

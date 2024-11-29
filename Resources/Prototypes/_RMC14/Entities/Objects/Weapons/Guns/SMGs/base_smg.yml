@@ -38,7 +38,6 @@
   - type: GunDualWielding
     weaponGroup: Submachinegun
   - type: GunPointBlank
-    damageMultiplier: 0.4
   - type: RMCFireGroup
     group: Rifles
     delay: 2

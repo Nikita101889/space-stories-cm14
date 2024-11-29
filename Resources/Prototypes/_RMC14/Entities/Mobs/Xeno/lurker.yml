@@ -60,7 +60,6 @@
     knockdownRequiresInvisibility: true
     unrootOnMelee: true
   - type: XenoTurnInvisible
-    opacity: 0.01
   - type: XenoCripplingStrike
   - type: XenoMeleeSlow
     requiresKnockDown: true

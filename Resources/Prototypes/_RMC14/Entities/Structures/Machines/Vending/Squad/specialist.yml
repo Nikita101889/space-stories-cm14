@@ -28,15 +28,15 @@
       #  points: 0
       - id: RMCScoutSpecEquipmentCase
       - id: CMSniperEquipmentCase
-      - id: RMCSniperAntiMaterielEquipmentCase
+      - id: RMCSniperAntiMaterielEquipmentCase # Stories-AntiMateriel
     - name: Extra Scout Ammunition
       entries:
       - id: RMCMagazineRifleM4SPRA19Impact
-        points: 30
+        points: 40
       - id: RMCMagazineRifleM4SPRA19Incendiary
-        points: 30
+        points: 40
       - id: RMCMagazineRifleM4SPRA19
-        points: 30
+        points: 40
     - name: Extra Sniper Ammunition
       entries:
       - id: CMMagazineSniperM96SFlak
@@ -46,7 +46,7 @@
       - id: CMMagazineSniperM96S
         points: 40
       - id: CMMagazineSniperXM43E1AntiMateriel
-        points: 30
+        points: 40
     - name: Extra Demolitionist Ammunition
       entries:
       - id: RMCRocket84mmAntiArmor
@@ -103,19 +103,19 @@
     jobs:
     - CMWeaponsSpecialist
     sections:
-    - name: Стандартное оборудование
+    - name: Standard Equipment
       takeAll: CMStandard
       entries:
       - id: CMVendorBundleWeaponsSpecialistApparel
       - id: CMMRE
       #- id: CMMap # TODO: Make a map
-    - name: Рюкзаки
+    - name: Backpack
       choices: { CMBackpack: 1 }
       entries:
       - id: CMBackpackMarine
       - id: CMSatchelMarine
         recommended: true
-    - name: Пояс
+    - name: Belt
       choices: { CMBelt: 1 }
       entries:
       - id: RMCBeltUtilityGeneral
@@ -130,16 +130,16 @@
       choices: { RMCPouch: 2 }
       entries:
       - id: RMCPouchFirstAidInjectors
-        name: подсумок первой помощи (многоразовые инъекторы)
+        name: first-aid pouch (refillable injectors)
         recommended: true
       - id: RMCPouchFirstAidSplintsGauzeOintment
-        name: подсумок первой помощи (марля, мазь) # TODO RMC14 splints comma
+        name: first-aid pouch (gauze, ointment) # TODO RMC14 splints comma
         recommended: true
       - id: RMCPouchFirstAidPills
-        name: подсумок первой помощи (таблетки)
+        name: first-aid pouch (pills)
         recommended: true
       - id: RMCPouchFlareFilled
-        name: подсумок фаеров (полный)
+        name: Flare pouch (Full)
       - id: RMCPouchMagazine
         recommended: true
       - id: RMCPouchShotgun
@@ -169,7 +169,7 @@
         points: 15
       - id: RMCSmartPistolCase
         points: 15
-    - name: Боеприпасы вторичного оружия
+    - name: Sidearm Ammunition
       entries:
       - id: RMCSpeedLoader44Marksman
         points: 10
@@ -177,7 +177,7 @@
         points: 5
       - id: RMCMagazinePistolSU6
         points: 10
-    - name: Предметы одежды
+    - name: Clothing Items
       entries:
       - id: RMCScabbardMacheteFilled
         points: 6
@@ -193,7 +193,7 @@
         points: 15
       - id: RMCPouchAutoinjectorFill
         points: 15
-    - name: Утилиты
+    - name: Utilities
       entries:
       - id: CMRollerBedSpawnFolded
         points: 5
@@ -205,7 +205,7 @@
     #- id: CMMotionDetector
       - id: RMCWhistle
         points: 5
-    - name: Бинокли
+    - name: Binoculars
       entries:
       - id: RMCBinoculars
         points: 5
