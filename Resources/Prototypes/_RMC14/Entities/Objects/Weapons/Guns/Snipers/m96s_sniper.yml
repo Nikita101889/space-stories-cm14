@@ -196,7 +196,6 @@
       falloff: 10
       buildup: true
 
-# TODO RMC14 incendiary
 - type: entity
   parent: CMBulletSniper10x28mm
   id: CMBulletSniper10x28mmIncendiary
@@ -210,8 +209,7 @@
         Heat: 20 # TODO RMC14 10 when aimed shot is in please someone help im dying
   - type: CMArmorPiercing
     amount: 20
-  - type: IgniteOnCollide
-    fireStacks: 3
+  - type: IgniteOnProjectileHit
 
 # TODO RMC14 slow
 - type: entity

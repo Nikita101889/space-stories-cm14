@@ -144,6 +144,7 @@
     layers:
     - state: bonechips
   - type: XenoSlowingSpitProjectile
+    superSlow: false
     slow: 5
     paralyze: 0
   - type: Projectile

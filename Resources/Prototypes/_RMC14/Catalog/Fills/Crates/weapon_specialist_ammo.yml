@@ -39,8 +39,7 @@
   components:
   - type: StorageFill
     contents:
-    - id: CMMagazineSniperM96SIncendiary # TODO rmc14 CMMagazineSniperM96SIncendiary
-      amount: 5
+    - id: CMMagazineSniperM96SIncendiary
 
 - type: entity
   parent: RMCCrateAmmo
@@ -106,7 +105,7 @@
       amount: 2
     - id: RMCMagazineRifleM4SPRA19Impact
       amount: 2
-    - id: RMCMagazineRifleM4SPRA19Incendiary # TODO rmc14 RMCMagazineRifleM4SPRA19Incendiary
+    - id: RMCMagazineRifleM4SPRA19Incendiary
       amount: 2
 
 - type: entity
@@ -136,5 +135,5 @@
   components:
   - type: StorageFill
     contents:
-    - id: RMCMagazineRifleM4SPRA19Incendiary # TODO rmc14 CMMagazineSniperM96SIncendiary
+    - id: RMCMagazineRifleM4SPRA19Incendiary
       amount: 3

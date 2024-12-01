@@ -122,12 +122,9 @@
     - id: RMCArmorHelmetM3Scout
     - id: RMCGlassesM4SPRBattleSight
     - id: RMCMagazineRifleM4SPRA19
-    - id: RMCMagazineRifleM4SPRA19 
-    - id: RMCMagazineRifleM4SPRA19 
-    - id: RMCMagazineRifleM4SPRA19 
+      amount: 4
     - id: RMCMagazineRifleM4SPRA19Incendiary
-    - id: RMCMagazineRifleM4SPRA19Incendiary
-    - id: RMCMagazineRifleM4SPRA19Impact
+      amount: 2
     - id: RMCMagazineRifleM4SPRA19Impact
     - id: RMCBackpackScout
     - id: CMWeaponPistolMK80
