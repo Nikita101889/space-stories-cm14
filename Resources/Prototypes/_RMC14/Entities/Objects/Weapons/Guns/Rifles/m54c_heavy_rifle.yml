@@ -233,11 +233,11 @@
   components:
   - type: ItemCamouflage
     camouflageVariations:
-      Jungle: CMMagazineRifleM54CE2Jungle
+      Jungle: CMMagazineRifleM54CE2
       Desert: CMMagazineRifleM54CE2
-      Snow: CMMagazineRifleM54CE2Snow
-      Classic: CMMagazineRifleM54CE2Classic
-      Urban: CMMagazineRifleM54CE2Urban
+      Snow: CMMagazineRifleM54CE2
+      Classic: CMMagazineRifleM54CE2
+      Urban: CMMagazineRifleM54CE2
 
 - type: entity
   parent: CMMagazineRifleM54CE2

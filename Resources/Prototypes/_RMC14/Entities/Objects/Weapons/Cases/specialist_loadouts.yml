@@ -11,22 +11,21 @@
     - id: CMArmorHelmetM45
     - id: CMGlassesM42ScoutSight
     - id: CMMagazineSniperM96S
-    - id: CMMagazineSniperM96S
+      amount: 2
     - id: CMMagazineSniperM96SIncendiary
-    - id: CMMagazineSniperM96SIncendiary
+      amount: 2
     - id: CMMagazineSniperM96SFlak
-    - id: CMMagazineSniperM96SFlak
+      amount: 2
     - id: CMBackpackSniper
     - id: CMWeaponPistolMK80
     - id: CMMagazinePistolMK80
       amount: 2
     - id: WeaponM96SSniperRifleJungle
 #    - id: CMFacepaintSniper
+#    - id: CMSpotter
   - type: CMChangeUserOnVend
     addComponents:
     - type: SniperWhitelist
-  - type: RemoveOnlyStorage
-  - type: FixedItemSizeStorage
 
 - type: entity
   parent: RMCBaseEquipmentCase
@@ -78,7 +77,7 @@
   - type: Storage
     maxItemSize: Huge
     grid:
-    - 0,0,33,1 # 17 items total
+    - 0,0,29,1 # 17 items total
   - type: StorageFill
     contents:
     - id: RMCArmorM3TDemo
@@ -130,6 +129,7 @@
     - id: RMCMagazineRifleM4SPRA19Incendiary
       amount: 2
     - id: RMCMagazineRifleM4SPRA19Impact
+      amount: 2
     - id: RMCBackpackScout
     - id: CMWeaponPistolMK80
     - id: CMMagazinePistolMK80

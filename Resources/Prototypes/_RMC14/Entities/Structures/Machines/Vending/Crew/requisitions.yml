@@ -307,7 +307,7 @@
       entries:
       - id: RMCPowerCellSmartgun
         amount: 4
-      - id: RMCMagazineSmartGunCamo
+      - id: RMCMagazineSmartGun
         amount: 4
       #- id: M44 Heavy Speed Loader (.44)
       #  amount: 10
