@@ -12,7 +12,7 @@
   - type: GhostRole
     name: cm-job-name-xeno-warrior
   - type: Sprite
-    sprite: _RMC14/Mobs/Xenonids/Warrior/warrior.rsi
+    sprite: _Stories/Mobs/Xenos/Warrior/warrior.rsi
   - type: MobState
     allowedStates:
     - Alive
@@ -35,7 +35,7 @@
     - ActionXenoFling
     - ActionXenoDevolve
     tier: 2
-    hudOffset: -0.15,0.25
+    hudOffset: 0,0.25
     unlockAt: 540 # 9 minutes
   - type: XenoLight
   - type: XenoDevolve

@@ -13,7 +13,7 @@
   - type: GhostRole
     name: cm-job-name-xeno-runner
   - type: Sprite
-    sprite: _RMC14/Mobs/Xenonids/Runner/runner.rsi
+    sprite: _Stories/Mobs/Xenos/Runner/runner.rsi
   - type: MobState
     allowedStates:
     - Alive
@@ -22,7 +22,7 @@
   - type: Xeno
     role: CMXenoRunner
     tier: 1
-    hudOffset: -0.15,0.6
+    hudOffset: 0,0.63
     unlockAt: 300 # 5 minutes
   - type: Fixtures
     fixtures:
@@ -142,7 +142,7 @@
   suffix: Acider
   components:
   - type: Sprite
-    sprite: _RMC14/Mobs/Xenonids/Runner/acider_runner.rsi
+    sprite: _Stories/Mobs/Xenos/Runner/acider_runner.rsi
     layers:
     - map: [ "enum.XenoVisualLayers.Base", "enum.ForTheHiveVisualLayers.Base" ]
       state: alive
@@ -163,6 +163,7 @@
     - ActionXenoAcidAcider
     - ActionXenoForTheHive
     - ActionXenoDevolve
+    hudOffset: -0.1,0.63
     hidden: true
   - type: XenoStrain
     name: rmc-xeno-acider-name
@@ -199,8 +200,8 @@
           Heat: 1
       duration: 20
   - type: ForTheHive
-    baseSprite: _RMC14/Mobs/Xenonids/Runner/acider_runner.rsi
-    activeSprite: _RMC14/Mobs/Xenonids/Runner/acider_runner_primed.rsi
+    baseSprite: _Stories/Mobs/Xenos/Runner/acider_runner.rsi
+    activeSprite: _Stories/Mobs/Xenos/Runner/acider_runner_primed.rsi
     baseDamage:
       types:
         Heat: 1

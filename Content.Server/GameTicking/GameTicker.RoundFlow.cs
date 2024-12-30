@@ -477,7 +477,7 @@ namespace Content.Server.GameTicking
                 var query = EntityQueryEnumerator<CMDistressSignalRuleComponent>();
                 while (query.MoveNext(out var uid, out var component))
                 {
-                    result = Loc.GetString($"cm-distress-signal-discord-{component.Result.ToString().ToLower()}");
+                    result = Loc.GetString($"cm-distress-signal-discord-{component.Result?.ToString().ToLower()}");
                 }
                 // Stories-Discord-End
 

@@ -12,7 +12,7 @@
   - type: GhostRole
     name: cm-job-name-xeno-burrower
   - type: Sprite
-    sprite: _RMC14/Mobs/Xenonids/Burrower/burrower.rsi
+    sprite: _Stories/Mobs/Xenos/Burrower/burrower.rsi
   - type: MobState
     allowedStates:
     - Alive
@@ -39,7 +39,7 @@
     - ActionXenoTremor
     - ActionXenoDevolve
     tier: 2
-    hudOffset: -0.15,0.56
+    hudOffset: 0,0.56
     unlockAt: 420 # 7 minutes
   - type: XenoLight
   - type: XenoDevolve

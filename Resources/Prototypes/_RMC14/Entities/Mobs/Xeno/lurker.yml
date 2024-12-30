@@ -12,7 +12,7 @@
   - type: GhostRole
     name: cm-job-name-xeno-lurker
   - type: Sprite
-    sprite: _RMC14/Mobs/Xenonids/Lurker/lurker.rsi
+    sprite: _Stories/Mobs/Xenos/Lurker/lurker.rsi
   - type: MobState
     allowedStates:
     - Alive

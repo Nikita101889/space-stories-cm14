@@ -8,7 +8,7 @@
   description: thas a fuckin rouny.
   components:
   - type: Sprite
-    sprite: _RMC14/Mobs/Xenonids/Rouny/rouny.rsi
+    sprite: _Stories/Mobs/Xenos/Rouny/rouny.rsi
   - type: XenoEvolution
     max: 200
     evolvesTo: [ ]
@@ -24,7 +24,7 @@
   description: A cruel, cruel joke made by some sick individual.
   components:
   - type: Sprite
-    sprite: _RMC14/Mobs/Xenonids/Wehny/wehny.rsi
+    sprite: _Stories/Mobs/Xenos/Wehny/wehny.rsi
   - type: XenoEvolution
     max: 200
     evolvesTo: [ ]

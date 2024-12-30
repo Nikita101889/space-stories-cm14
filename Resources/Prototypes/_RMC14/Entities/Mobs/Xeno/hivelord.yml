@@ -24,7 +24,7 @@
       650: Dead
   - type: Xeno
     tier: 2
-    hudOffset: -0.1,0.1
+    hudOffset: 0,0.35
     unlockAt: 180 # 3 minutes
   - type: XenoHeavy
   - type: XenoDevolve
@@ -96,7 +96,7 @@
   id: CMXenoHivelord
   components:
   - type: Sprite
-    sprite: _RMC14/Mobs/Xenonids/Hivelord/hivelord.rsi
+    sprite: _Stories/Mobs/Xenos/Hivelord/hivelord.rsi
   - type: Xeno
     role: CMXenoHivelord
     actionIds:
@@ -138,7 +138,7 @@
   suffix: Resin Whisperer
   components:
   - type: Sprite
-    sprite: _RMC14/Mobs/Xenonids/Hivelord/resin_whisperer_hivelord.rsi
+    sprite: _Stories/Mobs/Xenos/Hivelord/resin_whisperer_hivelord.rsi
   - type: Xeno
     role: CMXenoHivelord
     actionIds:

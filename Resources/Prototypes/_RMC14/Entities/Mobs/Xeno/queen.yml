@@ -10,12 +10,12 @@
   - type: GhostRole
     name: cm-job-name-xeno-queen
   - type: Sprite
-    sprite: _RMC14/Mobs/Xenonids/Queen/queen.rsi
+    sprite: _Stories/Mobs/Xenos/Queen/queen.rsi
     layers:
     - map: [ "enum.XenoVisualLayers.Base" ]
       state: alive
     - map: [ "enum.XenoVisualLayers.Ovipositor" ]
-      sprite: _RMC14/Mobs/Xenonids/Queen/ovipositor.rsi
+      sprite: _Stories/Mobs/Xenos/Queen/ovipositor.rsi
     - map: [ "enum.RMCDamageVisualLayers.Base" ]
       visible: false
     - map: [ "enum.XenoInhandVisualLayers.Left" ]
@@ -61,7 +61,6 @@
     tier: 0
     bypassTierCount: true
     unlockAt: 0
-    hudOffset: -0.1,0
   - type: XenoHeavy
   - type: XenoAcid
   - type: XenoConstruction

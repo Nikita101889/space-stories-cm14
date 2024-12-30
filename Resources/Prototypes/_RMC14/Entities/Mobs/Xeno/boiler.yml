@@ -12,7 +12,7 @@
   - type: GhostRole
     name: cm-job-name-xeno-boiler
   - type: Sprite
-    sprite: _RMC14/Mobs/Xenonids/Boiler/boiler.rsi
+    sprite: _Stories/Mobs/Xenos/Boiler/boiler.rsi
   - type: Fixtures
     fixtures:
       fix1:
@@ -57,7 +57,7 @@
     - ActionXenoAcidShroud
     - ActionXenoDevolve
     tier: 3
-    hudOffset: -0.15,0.05
+    hudOffset: 0,0.35
     unlockAt: 900 # 15 minutes
   - type: XenoHeavy
   - type: XenoDevolve

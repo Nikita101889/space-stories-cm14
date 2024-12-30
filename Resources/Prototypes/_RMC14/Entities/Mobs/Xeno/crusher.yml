@@ -12,7 +12,7 @@
   - type: GhostRole
     name: cm-job-name-xeno-crusher
   - type: Sprite
-    sprite: _RMC14/Mobs/Xenonids/Crusher/crusher.rsi
+    sprite: _Stories/Mobs/Xenos/Crusher/crusher.rsi
   - type: MobState
     allowedStates:
     - Alive
@@ -35,7 +35,7 @@
     - ActionXenoDefensiveShield
     - ActionXenoDevolve
     tier: 3
-    hudOffset: -0.15,0.1
+    hudOffset: 0,0.375
     unlockAt: 900 # 15 minutes
   - type: XenoHeavy
   - type: XenoDevolve

@@ -12,7 +12,7 @@
   - type: GhostRole
     name: cm-job-name-xeno-carrier
   - type: Sprite
-    sprite: _RMC14/Mobs/Xenonids/Carrier/carrier.rsi
+    sprite: _Stories/Mobs/Xenos/Carrier/carrier.rsi
     layers:
     - map: [ "enum.XenoVisualLayers.Base" ]
       state: alive

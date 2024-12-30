@@ -12,7 +12,7 @@
   - type: GhostRole
     name: cm-job-name-xeno-spitter
   - type: Sprite
-    sprite: _RMC14/Mobs/Xenonids/Spitter/spitter.rsi
+    sprite: _Stories/Mobs/Xenos/Spitter/spitter.rsi
   - type: MobState
     allowedStates:
     - Alive
@@ -36,7 +36,7 @@
     - ActionXenoSprayAcid
     - ActionXenoDevolve
     tier: 2
-    hudOffset: -0.15,0.025
+    hudOffset: 0,0.16
     unlockAt: 540 # 9 minutes
   - type: XenoHeavy
   - type: XenoDevolve

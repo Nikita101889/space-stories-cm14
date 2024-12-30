@@ -3,268 +3,178 @@
   parent: WeaponShotgunM42A2
   suffix: BloodyParty
   components:
-  - type: Sprite
-    sprite: _Stories/Partners/Weapons/Shotguns/m42a2.rsi
-    layers:
-    - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
-  - type: Clothing
-    sprite: _Stories/Partners/Weapons/Shotguns/m42a2.rsi
   - type: Construction
     graph: ShotgunM42A2Construct
     node: bloodyParty
+  - type: ItemCamouflage
+    camouflageVariations:
+      Jungle: _Stories/Partners/Weapons/Shotguns/m42a2.rsi
+
 
 - type: entity
   id: StoriesWeaponRifleM54CPhoenix
   parent: WeaponRifleM54C
   suffix: Phoenix
   components:
-  - type: Sprite
-    sprite: _Stories/Partners/Weapons/Rifles/m54c.rsi
-    layers:
-    - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
-    - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
-  - type: Clothing
-    sprite: _Stories/Partners/Weapons/Rifles/m54c.rsi
   - type: Construction
     graph: RifleM54CConstruct
     node: phoenix
+  - type: ItemCamouflage
+    camouflageVariations:
+      Jungle: _Stories/Partners/Weapons/Rifles/m54c.rsi
 
 - type: entity
   id: StoriesWeaponRifleM4SPRAngelOfDeath
   parent: WeaponRifleM4SPR
   suffix: AngelOfDeath
   components:
-  - type: Sprite
-    sprite: _Stories/Partners/Weapons/Rifles/m4spr.rsi
-    layers:
-    - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
-    - state: m4spr_barrel
-      offset: 0.65, 0
-    - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
-  - type: Clothing
-    sprite: _Stories/Partners/Weapons/Rifles/m4spr.rsi
   - type: Construction
     graph: RifleM4SPRConstruct
     node: angelOfDeath
+  - type: ItemCamouflage
+    camouflageVariations:
+      Jungle: _Stories/Partners/Weapons/Rifles/m4spr.rsi
 
 - type: entity
   id: StoriesWeaponRifleM4SPRCustomAngelOfDeath
   parent: WeaponRifleM4SPRCustom
   suffix: AngelOfDeath
   components:
-  - type: Sprite
-    sprite: _Stories/Partners/Weapons/Rifles/m4spr_custom.rsi
-    layers:
-    - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
-    - state: m4spr_custom_barrel
-      offset: 0.65, 0
-    - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
-  - type: Clothing
-    sprite: _Stories/Partners/Weapons/Rifles/m4spr_custom.rsi
   - type: Construction
     graph: RifleM4SPRCustomConstruct
     node: angelOfDeath
+  - type: ItemCamouflage
+    camouflageVariations:
+      Jungle: _Stories/Partners/Weapons/Rifles/m4spr_custom.rsi
 
 - type: entity
   id: StoriesWeaponSMGM63Toxic
   parent: WeaponSMGM63
   suffix: Toxic
   components:
-  - type: Sprite
-    sprite: _Stories/Partners/Weapons/SMGs/m63.rsi
-    layers:
-    - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
-    - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
-  - type: Clothing
-    sprite: _Stories/Partners/Weapons/SMGs/m63.rsi
   - type: Construction
     graph: SMGM63Construct
     node: toxic
+  - type: ItemCamouflage
+    camouflageVariations:
+      Jungle: _Stories/Partners/Weapons/SMGs/m63.rsi
 
 - type: entity
   id: StoriesWeaponRevolverM44GoldRush
   parent: RMCWeaponRevolverM44
   suffix: GoldRush
   components:
-  - type: Sprite
-    sprite: _Stories/Partners/Weapons/Pistols/m44.rsi
-    layers:
-    - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
-  - type: Clothing
-    sprite: _Stories/Partners/Weapons/Pistols/m44.rsi
   - type: Construction
     graph: RevolverM44Construct
     node: goldRush
+  - type: ItemCamouflage
+    camouflageVariations:
+      Jungle: _Stories/Partners/Weapons/Pistols/m44.rsi
 
 - type: entity
   id: StoriesWeaponPistolM77Fate
   parent: CMWeaponPistolM77
   suffix: Fate
   components:
-  - type: Sprite
-    sprite: _Stories/Partners/Weapons/Pistols/m77.rsi
-    layers:
-    - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
-    - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
-  - type: Clothing
-    sprite: _Stories/Partners/Weapons/Pistols/m77.rsi
   - type: Construction
     graph: PistolM77Construct
     node: fate
+  - type: ItemCamouflage
+    camouflageVariations:
+      Jungle: _Stories/Partners/Weapons/Pistols/m77.rsi
 
 - type: entity
   id: StoriesWeaponPistolM1984Rust
   parent: CMWeaponPistolM1984
   suffix: Rust
   components:
-  - type: Sprite
-    sprite: _Stories/Partners/Weapons/Pistols/m1984.rsi
-    layers:
-    - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
-    - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
-  - type: Clothing
-    sprite: _Stories/Partners/Weapons/Pistols/m1984.rsi
   - type: Construction
     graph: PistolM1984Construct
     node: rust
+  - type: ItemCamouflage
+    camouflageVariations:
+      Jungle: _Stories/Partners/Weapons/Pistols/m1984.rsi
 
 - type: entity
   id: StoriesWeaponPistolMK80Amethyst
   parent: CMWeaponPistolMK80
   suffix: Amethyst
   components:
-  - type: Sprite
-    sprite: _Stories/Partners/Weapons/Pistols/mk80.rsi
-    layers:
-    - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
-    - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
-  - type: Clothing
-    sprite: _Stories/Partners/Weapons/Pistols/mk80.rsi
   - type: Construction
     graph: PistolMK80Construct
     node: amethyst
+  - type: ItemCamouflage
+    camouflageVariations:
+      Jungle: _Stories/Partners/Weapons/Pistols/mk80.rsi
 
 - type: entity
   id: StoriesWeaponPistolSU6Phantom
   parent: RMCWeaponPistolSU6
   suffix: Phantom
   components:
-  - type: Sprite
-    sprite: _Stories/Partners/Weapons/Pistols/su6.rsi
-    layers:
-    - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
-    - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
-  - type: Clothing
-    sprite: _Stories/Partners/Weapons/Pistols/su6.rsi
   - type: Construction
     graph: PistolSU6Construct
     node: phantom
+  - type: ItemCamouflage
+    camouflageVariations:
+      Jungle: _Stories/Partners/Weapons/Pistols/su6.rsi
 
 - type: entity
   id: StoriesSmartGunImpulse
   parent: RMCSmartGun
   suffix: Impulse
   components:
-  - type: Sprite
-    sprite: _Stories/Partners/Weapons/SmartGuns/smart_gun.rsi
-    layers:
-    - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
-    - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
-  - type: Clothing
-    sprite: _Stories/Partners/Weapons/SmartGuns/smart_gun.rsi
   - type: Construction
     graph: SmartGunConstruct
     node: impulse
+  - type: ItemCamouflage
+    camouflageVariations:
+      Jungle: _Stories/Partners/Weapons/SmartGuns/smart_gun.rsi
 
 - type: entity
   id: StoriesWeaponLauncherM5ATLBombardier
   parent: RMCWeaponLauncherM5ATL
   suffix: Bombardier
   components:
-  - type: Sprite
-    sprite: _Stories/Partners/Weapons/RocketLaunchers/m5spec.rsi
-    layers:
-    - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
-  - type: Clothing
-    sprite: _Stories/Partners/Weapons/RocketLaunchers/m5spec.rsi
   - type: Construction
     graph: WeaponLauncherM5ATLConstruct
     node: bombardier
+  - type: ItemCamouflage
+    camouflageVariations:
+      Jungle: _Stories/Partners/Weapons/RocketLaunchers/m5spec.rsi
 
 - type: entity
   id: StoriesM96SSniperRifleTiger
   parent: CMM96SSniperRifle
   suffix: Tiger
   components:
-  - type: Sprite
-    sprite: _Stories/Partners/Weapons/Snipers/m96s.rsi
-    layers:
-    - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
-    - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
-    - state: sniperbarrel
-      offset: 0.715, 0.025
-  - type: Clothing
-    sprite: _Stories/Partners/Weapons/Snipers/m96s.rsi
   - type: Construction
     graph: SniperRifleM96SConstruct
     node: tiger
+  - type: ItemCamouflage
+    camouflageVariations:
+      Jungle: _Stories/Partners/Weapons/Snipers/m96s.rsi
 
 - type: entity
   id: StoriesXM43E1SniperRifleGoldenAutumn
   parent: CMXM43E1SniperRifle
   suffix: GoldenAutumn
   components:
-  - type: Sprite
-    sprite: _Stories/Partners/Weapons/Snipers/xm43e1.rsi
-    layers:
-    - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
-    - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
-    - sprite: _RMC14/Objects/Weapons/Guns/Attachments/barrel.rsi
-      state: pmc_sniperbarrel
-      offset: 0.5, 0.0625
-  - type: Clothing
-    sprite: _Stories/Partners/Weapons/Snipers/xm43e1.rsi
   - type: Construction
     graph: XM43E1SniperRifleConstruct
     node: goldenAutumn
+  - type: ItemCamouflage
+    camouflageVariations:
+      Jungle: _Stories/Partners/Weapons/Snipers/xm43e1.rsi
 
 - type: entity
   id: StoriesWeaponLauncherM83Pacifist
   parent: WeaponLauncherM83
   suffix: Pacifist
   components:
-  - type: Sprite
-    sprite: _Stories/Partners/Weapons/GrenadeLaunchers/m83.rsi
-    layers:
-    - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
-  - type: Clothing
-    sprite: _Stories/Partners/Weapons/GrenadeLaunchers/m83.rsi
   - type: Construction
     graph: WeaponLauncherM83Construct
     node: pacifist
+  - type: ItemCamouflage
+    camouflageVariations:
+      Jungle: _Stories/Partners/Weapons/GrenadeLaunchers/m83.rsi
