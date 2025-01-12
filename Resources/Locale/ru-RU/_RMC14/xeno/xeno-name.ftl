@@ -3,4 +3,4 @@ rmc-xeno-young = Молодой { $baseName }
 rmc-xeno-mature = Взрослый { $baseName }
 rmc-xeno-elder = Старейшина { $baseName }
 rmc-xeno-ancient = Древний { $baseName }
-rmc-xeno-prime = { $baseName } Прайм
+rmc-xeno-prime = Первородный { $baseName }
