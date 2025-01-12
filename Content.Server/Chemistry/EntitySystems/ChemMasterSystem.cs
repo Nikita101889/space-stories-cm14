@@ -195,7 +195,7 @@ namespace Content.Server.Chemistry.EntitySystems
                 return;
 
             // Ensure the number is valid.
-            if (number == 0 || !_storageSystem.HasSpace((container, storage)))
+            if (message.Number == 0 || !_storageSystem.HasSpace((container, storage)))
                 return;
 
             // Ensure the amount is valid.
@@ -206,7 +206,7 @@ namespace Content.Server.Chemistry.EntitySystems
             if (message.Label.Length > SharedChemMaster.LabelMaxLength)
                 return;
 
-            var needed = message.Dosage * number;
+            var needed = message.Dosage * message.Number;
             if (!WithdrawFromBuffer(chemMaster, needed, user, out var withdrawal))
                 return;
 
@@ -218,7 +218,7 @@ namespace Content.Server.Chemistry.EntitySystems
                 _rmcIconLabel.SetText((container, iconLabel), "rmc-custom-container-label-text", ("customLabel", message.Label));
             }
 
-            for (var i = 0; i < number; i++)
+            for (var i = 0; i < message.Number; i++)
             {
                 var item = Spawn(PillPrototypeId, Transform(container).Coordinates);
                 _storageSystem.Insert(container, item, out _, user: user, storage);
