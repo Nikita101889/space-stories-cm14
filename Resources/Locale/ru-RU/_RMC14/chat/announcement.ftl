@@ -8,7 +8,7 @@ rmc-announcement-message-signed = [font size=14][bold][color=white]Объявл�
     { $message }
     
     Подписано,
-    { $job } { $name }[/color][/font]
+    { $name }[/color][/font]
 rmc-announcement-message-raw = [font size=14][bold][color=white]{ $author }[/color][/bold][/font][font size=12][color=red]
     
     { $message }
