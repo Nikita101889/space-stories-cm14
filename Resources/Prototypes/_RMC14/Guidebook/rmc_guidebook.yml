@@ -30,14 +30,14 @@
   parent: RMC
   id: RMCGuideRoleRifleman
   priority: 0
-  name: "Rifleman Guide"
+  name: "Руководство стрелков"
   text: "/ServerInfo/Guidebook/_RMC14/NewPlayerGuide/RMCGuideRoleRifleman.xml"
 
 - type: guideEntry
   parent: RMC
   id: RMCGuideRoleDrone
   priority: 1
-  name: "Drone Guide"
+  name: "Руководство дрона"
   text: "/ServerInfo/Guidebook/_RMC14/NewPlayerGuide/RMCGuideRoleDrone.xml"
 
 - type: guideEntry
@@ -65,7 +65,7 @@
   parent: RMC
   id: RMCMedical
   priority: 5
-  name: "Medical"
+  name: "Медицина"
   text: "/ServerInfo/Guidebook/_RMC14/Medical/RMCMedical.xml"
   children:
   - RMCChemicals
@@ -74,5 +74,5 @@
   parent: RMC
   id: RMCRequisitions
   priority: 6
-  name: "Requisitions"
+  name: "Поставки"
   text: "/ServerInfo/Guidebook/_RMC14/RMCRequisitions.xml"

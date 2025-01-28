@@ -1,15 +1,15 @@
-﻿- type: guideEntry
-  parent: RMC
-  id: RMCOverview
-  name: rmc-guide-entry-rules
-  priority: 0
-  text: "/ServerInfo/Guidebook/_RMC14/Rules/RMCOverview.xml"
-  children:
-  - RMCBanTypes
-  - RMCRulesGeneralInformation
-  - RMCZeroTolerance
-  - RMCRulesCommand
-  - RMCRulesRoleplayStandards
+﻿# - type: guideEntry
+#   parent: RMC
+#   id: RMCOverview
+#   name: rmc-guide-entry-rules
+#   priority: 0
+#   text: "/ServerInfo/Guidebook/_RMC14/Rules/RMCOverview.xml"
+#   children:
+#   - RMCBanTypes
+#   - RMCRulesGeneralInformation
+#   - RMCZeroTolerance
+#   - RMCRulesCommand
+#   - RMCRulesRoleplayStandards
 
 - type: guideEntry
   parent: RMC
@@ -25,20 +25,20 @@
   priority: 3
   text: "/ServerInfo/Guidebook/_RMC14/Rules/RMCZeroTolerance.xml"
 
-# general information
-- type: guideEntry
-  parent: RMC
-  id: RMCRulesGeneralInformation
-  name: rmc-guide-entry-rules-core
-  priority: 4
-  text: "/ServerInfo/Guidebook/_RMC14/Rules/RMCRulesCore.xml"
-  children:
-  - RMCLanguage
-  - RMCMultikey
-  - RMCRulesEscalation
-  - RMCMetaknowledge
-  - RMCKindness
-  - RMCMutinies
+# # general information
+# - type: guideEntry
+#   parent: RMC
+#   id: RMCRulesGeneralInformation
+#   name: rmc-guide-entry-rules-core
+#   priority: 4
+#   text: "/ServerInfo/Guidebook/_RMC14/Rules/RMCRulesCore.xml"
+#   children:
+#   - RMCLanguage
+#   - RMCMultikey
+#   - RMCRulesEscalation
+#   - RMCMetaknowledge
+#   - RMCKindness
+#   - RMCMutinies
 
 - type: guideEntry
   parent: RMC
@@ -82,16 +82,16 @@
   priority: 11
   text: "/ServerInfo/Guidebook/_RMC14/Rules/Mutiny/RMCMutinies.xml"
 
-# command
-- type: guideEntry
-  parent: RMC
-  id: RMCRulesCommand
-  name: rmc-guide-entry-rules-command
-  priority: 5
-  text: "/ServerInfo/Guidebook/_RMC14/Rules/RMCRulesCommand.xml"
-  children:
-  - RMCCommandRoles
-  - RMCHigherStandards
+# # command
+# - type: guideEntry
+#   parent: RMC
+#   id: RMCRulesCommand
+#   name: rmc-guide-entry-rules-command
+#   priority: 5
+#   text: "/ServerInfo/Guidebook/_RMC14/Rules/RMCRulesCommand.xml"
+#   children:
+#   - RMCCommandRoles
+#   - RMCHigherStandards
 
 - type: guideEntry
   parent: RMC
@@ -107,21 +107,21 @@
   priority: 14
   text: "/ServerInfo/Guidebook/_RMC14/Rules/MilitaryCommand/RMCHigherStandards.xml"
 
-# roleplay standards
-- type: guideEntry
-  parent: RMC
-  id: RMCRulesRoleplayStandards
-  name: rmc-guide-entry-rules-roleplay-standards
-  priority: 5
-  text: "/ServerInfo/Guidebook/_RMC14/Rules/RMCRulesRoleplay.xml"
-  children:
-  - RMCGeneralRoleplayStandards
-  - RMCCharacterNames
-  - RMCMarineRoleplayStandards
-  - RMCCommandRoleplay
-  - RMCXenoRoleplay
-  - RMCSurvivorRoleplay
-  - RMCHostileFactionRoleplay
+# # roleplay standards
+# - type: guideEntry
+#   parent: RMC
+#   id: RMCRulesRoleplayStandards
+#   name: rmc-guide-entry-rules-roleplay-standards
+#   priority: 5
+#   text: "/ServerInfo/Guidebook/_RMC14/Rules/RMCRulesRoleplay.xml"
+#   children:
+#   - RMCGeneralRoleplayStandards
+#   - RMCCharacterNames
+#   - RMCMarineRoleplayStandards
+#   - RMCCommandRoleplay
+#   - RMCXenoRoleplay
+#   - RMCSurvivorRoleplay
+#   - RMCHostileFactionRoleplay
 
 - type: guideEntry
   parent: RMC

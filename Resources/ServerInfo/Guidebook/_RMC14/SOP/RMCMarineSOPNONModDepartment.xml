@@ -1,53 +1,53 @@
 ﻿<Document>
-  # NON-Modifiable Department Regulations
+  # НЕ изменяемые Департаментские Положения
 
-  ## Armories
+  ## Оружейные
 
-  - Armory equipment may be given to all personnel during a Code [bold][color=red]Red[/color][/bold] or Code [bold][color=black]Delta[/color][/bold] scenario. Officers must be prioritized before enlisted.
-  - Equipment found in armories such as the M890 Tactical Shotgun are not allowed to be handed out to non-officers without a clear, understandable, and urgent reason. Deployment is not an urgent reason.
-  - The [color=#00CBFE][bold]Commanding Officer[/bold][/color]'s weapons may also not be handed out.
-  - Equipment stored in armories may not be part of a supply drop, rewards or prizes, and may not be used to form a squad.
+  - Оборудование из оружейных может быть выдано всему персоналу во время сценария кода [bold][color=red]Красный[/color][/bold] или кода [bold][color=black]Дельта[/color][/bold]. Офицеры имеют приоритет перед рядовыми.
+  - Оборудование, найденное в оружейных, такое как тактический дробовик M890, не разрешается выдавать не-офицерам без ясной, понятной и неотложной причины. Развертывание не является неотложной причиной.
+  - Оружие [color=#00CBFE][bold]Командующего Офицера[/bold][/color] также не может быть выдано.
+  - Оборудование, хранящееся в оружейных, не может быть частью грузов снабжения, наград или призов и не может использоваться для формирования отряда.
 
-  ## AI Core
+  ## Ядро ИИ
 
-  The AI Core is the direct responsibility of any active AI Service Technician assigned to the ship. They are authorized to remove any personnel present in the core excluding pre-authorized personnel listed in the Access section. In the absence of one, the responsibility is the [color=#00CBFE][bold]Commanding Officer[/bold][/color]'s, then the [bold]Chief Engineer[/bold].
+  Ядро ИИ находится под прямой ответственностью любого действующего Техника по Обслуживанию ИИ, назначенного на корабль. Они уполномочены удалять любой персонал, присутствующий в ядре, за исключением предварительно авторизованного персонала, указанного в разделе "Доступ". В отсутствие такового ответственность несет [color=#00CBFE][bold]Командующий Офицер[/bold][/color], затем [bold]Главный Инженер[/bold].
 
-  [bold]Access[/bold]
-  - Access to the AI core is strictly by appointment only.
-  - Only UNMC synthetics, AI Service technicians (Including WEYA technicians), the [color=#00CBFE][bold]Commanding Officer[/bold][/color], and the [bold]Chief Engineer[/bold] have free access.
-  - Prior to any authorized appointments, weapons should be deposited at the reception desk and returned after the appointment has concluded.
-  - Anyone bringing weapons into the AI Core lose their right to access it and may result in Core Security Protocol being engaged. Pre-authorized personnel and [color=#ff000d][bold]MP[/bold][/color] responding to a legitimate security threat are exempt.
-  - Access rights are not transferable. Only UNMC Synthetics, AI Service Techs, and ARES may grant access to the AI core, through access requests.
+  [bold]Доступ[/bold]
+  - Доступ к ядру ИИ осуществляется строго по предварительной записи.
+  - Только синтетики КМП США, техники по обслуживанию ИИ (включая техников WEYA), [color=#00CBFE][bold]Командующий Офицер[/bold][/color] и [bold]Главный Инженер[/bold] имеют свободный доступ.
+  - До любых разрешенных посещений оружие должно быть сдано на стойку регистрации и возвращено после завершения посещения.
+  - Любой, кто проносит оружие в Ядро ИИ, теряет право доступа к нему, и это может привести к активации Протокола Безопасности Ядра. Предварительно авторизованный персонал и [color=#ff000d][bold]ВП[/bold][/color], реагирующие на законную угрозу безопасности, освобождаются от ответственности.
+  - Права доступа не подлежат передаче. Только синтетики КМП США, техники по обслуживанию ИИ и ARES могут предоставлять доступ к ядру ИИ через запросы на доступ.
 
-  [bold]AI Core Security Protocol[/bold]
+  [bold]Протокол Безопасности Ядра ИИ[/bold]
 
-  ARES is equipped with various tools to ensure the AI Core remains safe during emergencies.
+  ARES оснащен различными инструментами для обеспечения безопасности Ядра ИИ во время чрезвычайных ситуаций.
 
-  - ARES, through UNMC Synthetics, is authorized to remove trespassers by physical force.
-  - Circumstances that pose a serious threat to the integrity of the AI Core, ARES or UNMC Synthetics may initiate a core lockdown, resulting in all access routes being sealed and automated sentry guns located in the core chamber being armed.
-  - If lockdown procedures are ineffective or compromised, nerve gas may be deployed from vents to incapacitate intruders.
+  - ARES через синтетиков КМП США уполномочен удалять нарушителей физической силой.
+  - Обстоятельства, представляющие серьезную угрозу целостности Ядра ИИ, ARES или синтетиков КМП США, могут инициировать блокировку ядра, что приведет к запечатыванию всех путей доступа и вооружению автоматических турелей, расположенных в камере ядра.
+  - Если процедуры блокировки неэффективны или скомпрометированы, из вентиляционных отверстий может быть выпущен нервно-паралитический газ для выведения из строя злоумышленников.
 
-  ## Military Police
+  ## Военная Полиция
 
-  - [color=#ff000d][bold]MP[/bold][/color] personnel must always carry non-lethal detainment methods (excluding riot gear) to perform their duties.
+  - Персонал [color=#ff000d][bold]ВП[/bold][/color] должен всегда иметь при себе нелетальные методы задержания (за исключением оборудования для подавления массовых беспорядков) для выполнения своих обязанностей.
 
-  [bold]Use of listening devices[/bold]
-  - [color=#ff000d][bold]MP[/bold][/color] are authorized to use their provided listening devices within the brig at their discretion.
+  [bold]Использование подслушивающих устройств[/bold]
+  - [color=#ff000d][bold]ВП[/bold][/color] уполномочены использовать предоставленные им подслушивающие устройства в пределах карцера по своему усмотрению.
 
-  Any use of these devices outside of the brig must follow these requirements;
-  - They must receive permission from the [color=#008000][bold]Commander[/bold][/color], or in their absence the [color=#8B0000][bold]Chief MP[/bold][/color].
-  - The [color=#008000][bold]Commander[/bold][/color] may only authorize use if there is reasonable suspicion of intent to or conspiracy to commit a crime in that area.
-  - [color=#ff000d][bold]MP[/bold][/color] may not break or enter, nor have someone else do so, into an area they do not have access to in order to place devices.
+  Любое использование этих устройств за пределами карцера должно соответствовать следующим требованиям;
+  - Они должны получить разрешение от [color=#008000][bold]Командира[/bold][/color] или, в его отсутствие, от [color=#8B0000][bold]Главного ВП[/bold][/color].
+  - [color=#008000][bold]Командир[/bold][/color] может разрешить использование только при наличии разумного подозрения о намерении или сговоре с целью совершения преступления в этом районе.
+  - [color=#ff000d][bold]ВП[/bold][/color] не могут незаконно проникать или входить, а также поручать кому-либо другому делать это, в зону, к которой у них нет доступа, для размещения устройств.
 
-  ## Restricted Areas and Access Modification
+  ## Зоны Ограниченного Доступа и Изменение Доступа
 
-  Personnel may only legally access areas their ID grants them passage to, unless someone of that area grants them temporary access. The head of the department may overrule this, and the [color=#00CBFE][bold]Commanding Officer[/bold][/color] may overrule the head.
+  Персонал может законно получать доступ только к зонам, к которым их удостоверение личности дает им проход, если только кто-то из этой зоны не предоставит им временный доступ. Глава департамента может отменить это решение, а [color=#00CBFE][bold]Командующий Офицер[/bold][/color] может отменить решение главы департамента.
 
-  - The [color=#008000][bold]Commander[/bold][/color] may restrict anyone from accessing any area.
-  - Entry without access or permission through any means will be charged with [bold]Trespassing[/bold].
-  - Heads of departments may request anyone but the [color=#008000][bold]Commander[/bold][/color] or [color=#90EE90][bold]Duty Officer[/bold][/color] to leave their department, or be charged with [bold]Trespassing[/bold].
-  - The [color=#00CBFE][bold]Commanding Officer[/bold][/color] may modify any access to a person's ID card for any reason.
-  - The [color=#008000][bold]Commander[/bold][/color] may modify any access to any or all departments with the head of department's approval.
-  - In emergencies, such as missing command staff, any officer may modify their own access.
+  - [color=#008000][bold]Командир[/bold][/color] может запретить кому-либо доступ к любой зоне.
+  - Вход без доступа или разрешения любым способом будет квалифицироваться как [bold]Незаконное Вторжение[/bold].
+  - Главы департаментов могут потребовать, чтобы любой, кроме [color=#008000][bold]Командира[/bold][/color] или [color=#90EE90][bold]Дежурного Офицера[/bold][/color], покинул их департамент, иначе ему будет предъявлено обвинение в [bold]Незаконном Вторжении[/bold].
+  - [color=#00CBFE][bold]Командующий Офицер[/bold][/color] может изменить любой доступ к удостоверению личности человека по любой причине.
+  - [color=#008000][bold]Командир[/bold][/color] может изменить любой доступ к любому или ко всем департаментам с одобрения главы департамента.
+  - В чрезвычайных ситуациях, таких как отсутствие командного состава, любой офицер может изменить свой собственный доступ.
 
 </Document>
