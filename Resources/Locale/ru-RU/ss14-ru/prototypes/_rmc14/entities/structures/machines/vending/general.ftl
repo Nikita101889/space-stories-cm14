@@ -1,2 +1,2 @@
 ent-CMVendorWalkman = ОтдыхШкаф
-    .desc = Содержит одобренные We-Ya предметы для отдыха, такие как Walkmans и Cards.
+    .desc = Содержит одобренные Ве-Я предметы для отдыха, такие как Walkmans и Cards.

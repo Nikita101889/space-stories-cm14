@@ -18,7 +18,7 @@
 - type: guideEntry
   parent: RMC
   id: RMCGuideNewPlayer
-  name: "Руководство для новых игроков"
+  name: "Руководство для новых игроков" # Stories-Localise
   text: "/ServerInfo/Guidebook/_RMC14/RMCGuideNewPlayer.xml"
   children:
   - RMCGuideRoleRifleman
@@ -31,42 +31,42 @@
   parent: RMC
   id: RMCGuideRoleRifleman
   priority: 0
-  name: "Руководство стрелков"
+  name: "Руководство стрелков" # Stories-Localise
   text: "/ServerInfo/Guidebook/_RMC14/NewPlayerGuide/RMCGuideRoleRifleman.xml"
 
 - type: guideEntry
   parent: RMC
   id: RMCGuideRoleDrone
   priority: 1
-  name: "Руководство дрона"
+  name: "Руководство дрона" # Stories-Localise
   text: "/ServerInfo/Guidebook/_RMC14/NewPlayerGuide/RMCGuideRoleDrone.xml"
 
 - type: guideEntry
   parent: RMC
   id: RMCGuideRoleCombatTechnician
   priority: 2
-  name: "Боевой техник"
+  name: "Боевой техник" # Stories-Localise
   text: "/ServerInfo/Guidebook/_RMC14/NewPlayerGuide/RMCGuideRoleCombatTechnician.xml"
 
 - type: guideEntry
   parent: RMC
   id: RMCGuideCommunicationsTowers
   priority: 3
-  name: "Руководство по башням связи"
+  name: "Руководство по башням связи" # Stories-Localise
   text: "/ServerInfo/Guidebook/_RMC14/NewPlayerGuide/RMCGuideCommunicationsTowers.xml"
 
 - type: guideEntry
   parent: RMC
   id: RMCGuideRoleMaintenanceTechnician
   priority: 4
-  name: "Техник по обслуживанию"
+  name: "Техник по обслуживанию" # Stories-Localise
   text: "/ServerInfo/Guidebook/_RMC14/NewPlayerGuide/RMCGuideRoleMaintenanceTechnician.xml"
 
 - type: guideEntry
   parent: RMC
   id: RMCMedical
   priority: 5
-  name: "Медицина"
+  name: "Медицина" # Stories-Localise
   text: "/ServerInfo/Guidebook/_RMC14/Medical/RMCMedical.xml"
   children:
   - RMCChemicals
@@ -75,12 +75,12 @@
   parent: RMC
   id: RMCRequisitions
   priority: 6
-  name: "Поставки"
+  name: "Поставки" # Stories-Localise
   text: "/ServerInfo/Guidebook/_RMC14/RMCRequisitions.xml"
 
 - type: guideEntry
   parent: RMC
   id: RMCIntel
   priority: 7
-  name: "Intel"
+  name: "Разведка" # Stories-Localise
   text: "/ServerInfo/Guidebook/_RMC14/RMCIntel.xml"

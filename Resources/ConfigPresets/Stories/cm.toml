@@ -119,3 +119,6 @@ preset_enabled = false
 
 [viewport]
 maximum_width = 26
+
+[rmc]
+admin_fax_area_map = "Maps/_Stories/admin_fax.yml"

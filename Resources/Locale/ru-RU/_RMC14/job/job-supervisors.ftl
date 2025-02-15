@@ -1,5 +1,5 @@
 # supervisors
-cm-job-supervisors-we-ya = Корпоративный офис We-Ya
+cm-job-supervisors-we-ya = Корпоративный офис Ве-Я
 cm-job-supervisors-aso = офицеру вспомогательной поддержки
 cm-job-supervisors-co = командиру
 cm-job-supervisors-cmo = главному врачу

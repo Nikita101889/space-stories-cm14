@@ -20,7 +20,7 @@ public sealed class RMCClockSystem : EntitySystem
         var worldTime = (EntityQuery<GlobalTimeManagerComponent>().FirstOrDefault()?.TimeOffset ?? TimeSpan.Zero) + _ticker.RoundDuration();
         var worldDate = (EntityQuery<GlobalTimeManagerComponent>().FirstOrDefault()?.DateOffset ?? DateTime.Today.AddYears(100))
                         + worldTime;
-        var time = worldDate.ToString("dd MMMM, yyyy - HH:mm");
+        var time = worldDate.ToString("dd MMMM, 2182 - HH:mm"); // Stories-Parity
 
         args.PushMarkup(Loc.GetString("rmc-clock-examine", ("device", owner), ("time", time)));
     }
