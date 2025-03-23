@@ -292,18 +292,14 @@ cm-chatsan-replacement-survs = planet talls
 # cm-chatsan-word-#tank = #tank
 # cm-chatsan-replacement-#tank = turtle
 
-
 # cm-chatsan-word-# laser = # laser
 # cm-chatsan-replacement-# laser = dot
-
 
 # cm-chatsan-word-# lazer = # lazer
 # cm-chatsan-replacement-# lazer = dot
 
-
 # cm-chatsan-word-# flamer = # flamer
 # cm-chatsan-replacement-# flamer = fire spitter
-
 
 # cm-chatsan-word-# flamethrower = # flamethrower
 # cm-chatsan-replacement-# flamethrower =  fire spitter

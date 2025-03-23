@@ -64,6 +64,7 @@ rmc-xeno-construction-repair-structure-insufficient-plasma-warn = Для рем�
 rmc-xeno-construction-egg-morpher-no-parasites = В морфере для яиц нет лицехватов!
 rmc-xeno-construction-egg-morpher-attempt-insert-non-parasite = Вы не можете поместить это в морфер для яиц!
 rmc-xeno-construction-egg-morpher-already-full = Этот морфер для яиц уже полон!
+rmc-xeno-egg-morpher-return-self = { CAPITALIZE($parasite) } заползает в морфер яйца.
 rmc-xeno-construction-egg-morpher-examine = Укрывается: { $cur_paras }/{ $max_paras } лицехватов.
 rmc-xeno-construction-recovery-node-heal-target = Вы чувствуете, как вас окутывает теплая аура.
 rmc-xeno-construction-recovery-node-heal-other = { CAPITALIZE(THE($target)) } светится, когда его окутывает теплая аура.
