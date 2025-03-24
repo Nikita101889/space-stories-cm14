@@ -6,7 +6,6 @@ using Content.Server.Radio.Components;
 using Content.Shared._RMC14.Marines;
 using Content.Shared._RMC14.Marines.Squads;
 using Content.Shared._RMC14.Xenonids;
-using Content.Shared._RMC14.Marines;
 using Content.Shared.Chat;
 using Content.Shared.Database;
 using Content.Shared.Radio;
@@ -132,7 +131,7 @@ public sealed class RadioSystem : EntitySystem
             ("fontType", speech.FontId),
             ("fontSize", speech.FontSize),
             ("verb", Loc.GetString(_random.Pick(speech.SpeechVerbStrings))),
-            ("channel", $"\\[{channel.LocalizedName}{prefix}\\]"),
+            ("channel", $"\\[{channel.LocalizedName}\\]"),
             ("name", name),
             ("message", content));
 
