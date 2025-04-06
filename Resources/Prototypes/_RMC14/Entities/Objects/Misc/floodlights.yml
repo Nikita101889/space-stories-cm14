@@ -245,6 +245,7 @@
     netsync: true
   - type: RMCReactorPoweredLight
   - type: PreventAttackLightOff
+  - type: RequireProjectileTarget
 
 - type: entity
   parent: RMCFloodlightBroken
