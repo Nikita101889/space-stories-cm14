@@ -6,7 +6,8 @@
   - CMXenoFlammable
   - RMCXenoSpeechSounds
   - RMCXenoCommendationReceiver
-  id: RMCXenoBoilerBase
+  - RMCXenoMobCollision
+  id: CMXenoBoiler
   name: Boiler
   description: A huge, grotesque xenonid covered in glowing, oozing acid slime.
   components:
