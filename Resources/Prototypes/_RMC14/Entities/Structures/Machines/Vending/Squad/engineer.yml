@@ -22,10 +22,10 @@
     - name: Турели
       takeOne: CMHandheldDefense
       entries:
-    #    CM21STeslaCoil
     #    CMJIMAPlantedFlag
     #    CMUA42FSentryFlamer
       - id: RMCSentry
+      - id: RMCTesla
     - name: Улучшения Турелей
       choices: { CMHandheldDefenseUpgrade: 1 }
       entries:
