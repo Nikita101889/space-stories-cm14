@@ -732,7 +732,7 @@ entities:
     - type: Transform
       pos: 1.5,8.5
       parent: 1
-- proto: CMDoubleDoorAlamoSolidLeft
+- proto: STDoubleDoorAlamoSolidLeft
   entities:
   - uid: 42
     components:
@@ -745,7 +745,7 @@ entities:
     - type: Transform
       pos: 4.5,2.5
       parent: 1
-- proto: CMDoubleDoorAlamoSolidRight
+- proto: STDoubleDoorAlamoSolidRight
   entities:
   - uid: 44
     components:
