@@ -1,14 +1,14 @@
-cm-job-name-survivor = гражданский колонист
+cm-job-name-survivor = Гражданский Колонист
 cm-job-description-survivor = Вы выжили после нападения на корпоративный объект. Вы работали или жили в колонии/на станции, и вам удалось избежать нападения пришельцев... до сих пор.
-CMJobSurvivor = гражданский колонист
-cm-job-name-survivor-doctor = доктор-колонист
-CMJobSurvivorDoctor = доктор-колонист
-cm-job-name-survivor-engineer = инженер-колонист
-CMJobSurvivorEngineer = инженер-колонист
-cm-job-name-survivor-security = колонист службы безопасности
-CMJobSurvivorSecurity = колонист службы безопасности
-cm-job-name-survivor-corporate = корпоративный колонист
-CMJobSurvivorCorporate = корпоративный колонист
+CMJobSurvivor = Гражданский колонист
+cm-job-name-survivor-doctor = Доктор-Колонист
+CMJobSurvivorDoctor = Доктор-Колонист
+cm-job-name-survivor-engineer = Инженер-Колонист
+CMJobSurvivorEngineer = Инженер-Колонист
+cm-job-name-survivor-security = Колонист Службы Безопасности
+CMJobSurvivorSecurity = Колонист Службы Безопасности
+cm-job-name-survivor-corporate = Корпоративный Колонист
+CMJobSurvivorCorporate = Корпоративный Колонист
 rmc-job-greeting-survivor =
     Вы выжили после нападения на колонию. Вы работали или жили в колонии, и вам удалось избежать нападения пришельцев... до сих пор.
     Вы полностью осведомлены об угрозе ксенонидов и можете использовать эти знания по своему усмотрению.
@@ -20,7 +20,7 @@ rmc-job-greeting-forecon =
     Вы НЕ знаете о морпехах и их намерениях.
     Вы [bold][color=#51A16C][font size=16]НЕ ВРАЖДЕБНЫ к КМП США![/font][/color][/bold]
 rmc-job-name-survivor-co = командир выживших
-    .desc = Вы командный офицер КМП США.
+    .desc = Вы командующий офицер КМП США.
 rmc-job-description-survivor-co = Вы являетесь майором КМП США.
 rmc-job-name-forecon = выживший ФОРКОН
     .desc = Вы застрявший морской пехотинец ФОРКОН КМП США. Ваш корабль, ВКСШ Ханьют, разбился, и вы оказались на планете. Делайте всё, чтобы выжить!
