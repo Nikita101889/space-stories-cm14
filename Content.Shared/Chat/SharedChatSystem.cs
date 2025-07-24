@@ -186,7 +186,7 @@ public abstract class SharedChatSystem : EntitySystem
             if (ev.Channel != null)
                 _prototypeManager.TryIndex(ev.Channel, out channel);
 
-            if (channel?.ID == HivemindChannel &&
+            if (ev.Channel == HivemindChannel.Id &&
                 !_xenoEvolution.HasLiving<XenoEvolutionGranterComponent>(1))
             {
                 if (!quiet)

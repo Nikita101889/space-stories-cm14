@@ -21,7 +21,7 @@ public sealed class BoxerJabSystem : EntitySystem
     [Dependency] private readonly RMCSlowSystem _slow = default!;
     [Dependency] private readonly SharedBoxerKOSystem _koSystem = default!;
     [Dependency] private readonly IGameTiming _timing = default!;
-    [Dependency] private readonly SharedActionsSystem _action = default!;
+    [Dependency] private readonly SharedActionsSystem _actions = default!;
     [Dependency] private readonly SharedPopupSystem _popup = default!;
 
     public override void Initialize()
@@ -63,10 +63,11 @@ public sealed class BoxerJabSystem : EntitySystem
             return;
         var tracker = recently.Trackers.GetValueOrDefault(args.Target);
 
-        foreach (var (actionId, action) in _action.GetActions(xeno))
+        foreach (var (actionId, action) in _actions.GetActions(xeno))
         {
-            if (action.BaseEvent is BoxerPunchActionEvent && tracker.Count != koComp.MaxKO)
-                _action.SetCooldown(actionId, comp.Cooldown);
+            var actionEvent = _actions.GetEvent(xeno);
+            if (actionEvent is BoxerPunchActionEvent && tracker.Count != koComp.MaxKO)
+                _actions.SetCooldown(actionId, comp.Cooldown);
         }
     }
 }

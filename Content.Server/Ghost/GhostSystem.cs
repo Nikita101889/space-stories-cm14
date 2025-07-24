@@ -491,7 +491,7 @@ namespace Content.Server.Ghost
             var proto = GameTicker.ObserverPrototypeName;
             if (mind.Comp.UserId != null && _partners.TryGetInfo(mind.Comp.UserId.Value, out var sponsorData))
             {
-                proto = sponsorData?.GhostSkin;
+                proto = sponsorData.GhostSkin;
             }
             var ghost = SpawnAtPosition(proto, spawnPosition.Value);
             // Stories-Sponsor-Ghosts-End

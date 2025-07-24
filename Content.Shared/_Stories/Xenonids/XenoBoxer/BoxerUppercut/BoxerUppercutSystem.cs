@@ -44,7 +44,7 @@ public sealed class BoxerUppercutSystem : EntitySystem
     [Dependency] private readonly ThrowingSystem _throwing = default!;
     [Dependency] private readonly SharedStunSystem _stun = default!;
     [Dependency] private readonly SharedRMCDamageableSystem _rmcDamage = default!;
-    [Dependency] private readonly SharedActionsSystem _action = default!;
+    [Dependency] private readonly SharedActionsSystem _actions = default!;
     [Dependency] private readonly SharedBoxerKOSystem _koSystem = default!;
 
     public override void Initialize()
@@ -135,10 +135,11 @@ public sealed class BoxerUppercutSystem : EntitySystem
 
         _rmcMelee.DoLunge(xeno, targetId);
         SpawnAttachedTo(comp.Effect, targetId.ToCoordinates());
-        foreach (var (actionId, action) in _action.GetActions(xeno))
+        foreach (var (actionId, action) in _actions.GetActions(xeno))
         {
-            if (action.BaseEvent is BoxerPunchActionEvent or BoxerJabActionEvent)
-                _action.SetCooldown(actionId, comp.Cooldown);
+            var actionEvent = _actions.GetEvent(xeno);
+            if (actionEvent is BoxerPunchActionEvent or BoxerJabActionEvent)
+                _actions.SetCooldown(actionId, comp.Cooldown);
         }
 
         _koSystem.ResetTracker(xeno, recently);

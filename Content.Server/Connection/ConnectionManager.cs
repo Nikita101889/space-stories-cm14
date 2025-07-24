@@ -67,7 +67,6 @@ namespace Content.Server.Connection
         [Dependency] private readonly IHttpClientHolder _http = default!;
         [Dependency] private readonly IAdminManager _adminManager = default!;
         [Dependency] private readonly SponsorsManager _sponsorsManager = default!; // Stories-Sponsors
-        [Dependency] private readonly IServerDbManager _dbManager = default!; // Stories-Sponsors
         [Dependency] private readonly IEntityManager _entityManager = default!;
 
         private GameTicker? _ticker;
@@ -388,7 +387,7 @@ namespace Content.Server.Connection
         // Stories-Queue-Start: Make these conditions in one place, for checks in the connection and in the queue
         public async Task<bool> HavePrivilegedJoin(NetUserId userId)
         {
-            var isAdmin = await _dbManager.GetAdminDataForAsync(userId) != null;
+            var isAdmin = await _db.GetAdminDataForAsync(userId) != null;
             var havePriorityJoin = _sponsorsManager.TryGetInfo(userId, out var sponsor) && sponsor.HavePriorityJoin; // Stories-Sponsors
             var wasInGame = EntitySystem.TryGet<GameTicker>(out var ticker) &&
                             ticker.PlayerGameStatuses.TryGetValue(userId, out var status) &&

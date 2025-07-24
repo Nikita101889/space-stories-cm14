@@ -30,7 +30,6 @@ namespace Content.Server.Preferences.Managers
         [Dependency] private readonly ILogManager _log = default!;
         [Dependency] private readonly UserDbDataManager _userDb = default!;
         [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
-        [Dependency] private readonly IPrototypeManager _prototypes = default!; // Stories-Sponsors
         [Dependency] private readonly SponsorsManager _sponsors = default!; // Stories-Sponsors
 
         // Cache player prefs on the server so we don't need as much async hell related to them.

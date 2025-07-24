@@ -25,7 +25,7 @@ public sealed class BoxerPunchSystem : EntitySystem
     [Dependency] private readonly SharedRMCMeleeWeaponSystem _rmcMelee = default!;
     [Dependency] private readonly SharedBoxerKOSystem _koSystem = default!;
     [Dependency] private readonly XenoSystem _xeno = default!;
-    [Dependency] private readonly SharedActionsSystem _action = default!;
+    [Dependency] private readonly SharedActionsSystem _actions = default!;
 
     public override void Initialize()
     {
@@ -71,10 +71,11 @@ public sealed class BoxerPunchSystem : EntitySystem
             return;
         var tracker = recently.Trackers.GetValueOrDefault(args.Target);
 
-        foreach (var (actionId, action) in _action.GetActions(xeno))
+        foreach (var (actionId, action) in _actions.GetActions(xeno))
         {
-            if (action.BaseEvent is BoxerJabActionEvent && tracker.Count != koComp.MaxKO)
-                _action.SetCooldown(actionId, comp.Cooldown);
+            var actionEvent = _actions.GetEvent(xeno);
+            if (actionEvent is BoxerJabActionEvent && tracker.Count != koComp.MaxKO)
+                _actions.SetCooldown(actionId, comp.Cooldown);
         }
     }
 }

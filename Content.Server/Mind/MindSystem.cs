@@ -216,7 +216,7 @@ public sealed class MindSystem : SharedMindSystem
             var proto = GameTicker.ObserverPrototypeName;
             if (mind.UserId != null && _partners.TryGetInfo(mind.UserId.Value, out var sponsorData))
             {
-                proto = sponsorData?.GhostSkin;
+                proto = sponsorData.GhostSkin;
             }
             entity = Spawn(proto, position);
             // Stories-Sponsor-Ghosts-End
