@@ -1,4 +1,5 @@
 - type: entity
+  abstract: true
   parent:
   - CMXenoUndeveloped
   - CMXenoFlammable
@@ -91,8 +92,6 @@
       volume: -8
   - type: RMCSize
     size: Small
-  - type: ParasiteAI
-  - type: SleepNPC
   - type: CanEscapeInventory
     baseResistTime: 1
   - type: HTN
@@ -103,7 +102,7 @@
         3.0
   - type: TacticalMapIcon
     icon:
-      sprite: _RMC14/Interface/map_blips.rsi
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
       state: parasite
   - type: AddAccentClothing
     accent: ReplacementAccent
@@ -118,7 +117,6 @@
   - type: XenoRankNames #TODO change ranks based on total hugs done
     rankNames:
       0: rmc-xeno-young
-      1: rmc-xeno-young
       2: rmc-xeno-mature-parasite
       3: rmc-xeno-elder-parasite
       4: rmc-xeno-ancient-parasite
@@ -134,6 +132,8 @@
   id: CMXenoParasite
   suffix: Normal
   components:
+  - type: SleepNPC
+  - type: ParasiteAI
   - type: Xeno
     actionIds:
     - ActionXenoRest
