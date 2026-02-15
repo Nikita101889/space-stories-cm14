@@ -570,7 +570,26 @@ public sealed partial class HunterProfileEditor : Control
             return;
 
         NameEdit.Text = _profile.Name;
-        GenderButton.SelectId((int)_profile.Gender);
+
+        var genderId = (int)_profile.Gender;
+        var genderValid = false;
+        for (var i = 0; i < GenderButton.ItemCount; i++)
+        {
+            if (GenderButton.GetItemId(i) == genderId)
+            {
+                genderValid = true;
+                break;
+            }
+        }
+        if (!genderValid && GenderButton.ItemCount > 0)
+        {
+            genderId = GenderButton.GetItemId(0);
+            _profile.Gender = (Gender)genderId;
+            SetDirty();
+        }
+        if (genderValid || GenderButton.ItemCount > 0)
+            GenderButton.SelectId(genderId);
+        
         AgeEdit.Text = _profile.Age.ToString();
 
         _cachedFlavorText = _profile.FlavorText ?? "";
@@ -578,39 +597,42 @@ public sealed partial class HunterProfileEditor : Control
 
         var statusId = (int)_profile.Status;
 
-        var isStatusInList = false;
-        for (int i = 0; i < StatusButton.ItemCount; i++)
+        if (StatusButton.ItemCount > 0)
         {
-            if (StatusButton.GetItemId(i) == statusId)
-            {
-                isStatusInList = true;
-                break;
-            }
-        }
-
-        if (!isStatusInList)
-        {
-            var fallbackId = (int)HunterStatus.Normal;
-            var normalInList = false;
+            var isStatusInList = false;
             for (int i = 0; i < StatusButton.ItemCount; i++)
             {
-                if (StatusButton.GetItemId(i) == fallbackId)
+                if (StatusButton.GetItemId(i) == statusId)
                 {
-                    normalInList = true;
+                    isStatusInList = true;
                     break;
                 }
             }
 
-            if (normalInList)
-                statusId = fallbackId;
-            else if (StatusButton.ItemCount > 0)
-                statusId = StatusButton.GetItemId(0);
-            
-            _profile.Status = (HunterStatus)statusId;
-            SetDirty();
-        }
+            if (!isStatusInList)
+            {
+                var fallbackId = (int)HunterStatus.Normal;
+                var normalInList = false;
+                for (int i = 0; i < StatusButton.ItemCount; i++)
+                {
+                    if (StatusButton.GetItemId(i) == fallbackId)
+                    {
+                        normalInList = true;
+                        break;
+                    }
+                }
 
-        StatusButton.SelectId(statusId);
+                if (normalInList)
+                    statusId = fallbackId;
+                else
+                    statusId = StatusButton.GetItemId(0);
+            
+                _profile.Status = (HunterStatus)statusId;
+                SetDirty();
+            }
+
+            StatusButton.SelectId(statusId);
+        }
 
         SkinColor.Color = _profile.SkinColor;
 
@@ -626,8 +648,37 @@ public sealed partial class HunterProfileEditor : Control
         }
 
         UpdateVoiceSelection();
-        TranslatorStyleButton.SelectId((int)_profile.TranslatorSound);
-        CloakStyleButton.SelectId((int)_profile.CloakSound);
+
+        var translatorId = (int)_profile.TranslatorSound;
+        var translatorValid = false;
+        for (var i = 0; i < TranslatorStyleButton.ItemCount; i++)
+        {
+            if (TranslatorStyleButton.GetItemId(i) == translatorId)
+            {
+                translatorValid = true;
+                break;
+            }
+        }
+        if (translatorValid)
+            TranslatorStyleButton.SelectId(translatorId);
+        else if (TranslatorStyleButton.ItemCount > 0)
+            TranslatorStyleButton.SelectId(TranslatorStyleButton.GetItemId(0));
+
+        var cloakId = (int)_profile.CloakSound;
+        var cloakValid = false;
+        for (var i = 0; i < CloakStyleButton.ItemCount; i++)
+        {
+            if (CloakStyleButton.GetItemId(i) == cloakId)
+            {
+                cloakValid = true;
+                break;
+            }
+        }
+        if (cloakValid)
+            CloakStyleButton.SelectId(cloakId);
+        else if (CloakStyleButton.ItemCount > 0)
+            CloakStyleButton.SelectId(CloakStyleButton.GetItemId(0));
+        
         CapeColorSelector.Color = _profile.CapeColor;
 
         SetPickerSelected("Armor", _profile.ArmorPrototype);

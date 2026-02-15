@@ -96,6 +96,7 @@ namespace Content.IntegrationTests.Tests
             "UNSEndeavour",
             "Berkley",
             "SSVDeyneka",
+			"HMSPratchett",
             "Rover"
         };
 
