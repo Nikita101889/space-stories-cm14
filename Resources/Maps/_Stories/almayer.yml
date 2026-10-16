@@ -136122,16 +136122,6 @@ entities:
       parent: 1
 - proto: RMCArmoryLockerRedM4SPRFilled
   entities:
-  - uid: 18154
-    components:
-    - type: Transform
-      pos: 26.5,118.5
-      parent: 1
-  - uid: 18155
-    components:
-    - type: Transform
-      pos: 27.5,118.5
-      parent: 1
   - uid: 18156
     components:
     - type: Transform
