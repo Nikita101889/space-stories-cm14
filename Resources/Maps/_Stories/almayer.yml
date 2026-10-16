@@ -66150,140 +66150,6 @@ entities:
     - type: Transform
       pos: -64.5,8.5
       parent: 1
-- proto: CMMagazineRifleM4SPR
-  entities:
-  - uid: 5774
-    components:
-    - type: Transform
-      parent: 5773
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
-  - uid: 5775
-    components:
-    - type: Transform
-      parent: 5773
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
-  - uid: 5776
-    components:
-    - type: Transform
-      parent: 5773
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
-  - uid: 5777
-    components:
-    - type: Transform
-      parent: 5773
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
-  - uid: 5778
-    components:
-    - type: Transform
-      parent: 5773
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
-  - uid: 5779
-    components:
-    - type: Transform
-      parent: 5773
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
-  - uid: 5780
-    components:
-    - type: Transform
-      parent: 5773
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
-  - uid: 5781
-    components:
-    - type: Transform
-      parent: 5773
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
-  - uid: 5782
-    components:
-    - type: Transform
-      parent: 5773
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
-  - uid: 5783
-    components:
-    - type: Transform
-      parent: 5773
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
-  - uid: 5784
-    components:
-    - type: Transform
-      parent: 5773
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
-  - uid: 5785
-    components:
-    - type: Transform
-      parent: 5773
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
-  - uid: 5786
-    components:
-    - type: Transform
-      parent: 5773
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
-  - uid: 5787
-    components:
-    - type: Transform
-      parent: 5773
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
-  - uid: 5788
-    components:
-    - type: Transform
-      parent: 5773
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
-  - uid: 5789
-    components:
-    - type: Transform
-      parent: 5773
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
-  - uid: 5790
-    components:
-    - type: Transform
-      pos: 20.274158,121.883644
-      parent: 1
-  - uid: 5791
-    components:
-    - type: Transform
-      pos: 20.696033,121.868004
-      parent: 1
-  - uid: 5792
-    components:
-    - type: Transform
-      pos: 20.289783,121.539536
-      parent: 1
-  - uid: 5793
-    components:
-    - type: Transform
-      pos: 20.680408,121.555176
-      parent: 1
 - proto: CMMarinePreparedMealChicken
   entities:
   - uid: 5794
@@ -136281,6 +136147,126 @@ entities:
     - type: Transform
       pos: 46.5,-8.5
       parent: 1
+- proto: RMCWeaponRifleL42A
+  entities:
+  - uid: 5774
+    components:
+    - type: Transform
+      parent: 5793
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 5775
+    components:
+    - type: Transform
+      pos: 19.52575,118.93543
+      parent: 1
+  - uid: 5776
+    components:
+    - type: Transform
+      pos: 19.560104,119.27425
+      parent: 1
+  - uid: 5777
+    components:
+    - type: Transform
+      pos: 19.54448,119.618
+      parent: 1
+  - uid: 5778
+    components:
+    - type: Transform
+      parent: 5793
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 5779
+    components:
+    - type: Transform
+      parent: 5793
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 5780
+    components:
+    - type: Transform
+      parent: 5793
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 5781
+    components:
+    - type: Transform
+      parent: 18556
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 5782
+    components:
+    - type: Transform
+      parent: 18556
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 5783
+    components:
+    - type: Transform
+      parent: 27176
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 5784
+    components:
+    - type: Transform
+      parent: 27176
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+- proto: RMCBoxMagazineRifleL42A
+  entities:
+  - uid: 5785
+    components:
+    - type: Transform
+      parent: 18553
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 5786
+    components:
+    - type: Transform
+      parent: 18553
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+- proto: RMCMagazineRifleL42AAP
+  entities:
+  - uid: 5787
+    components:
+    - type: Transform
+      pos: 20.659,121.735405
+      parent: 1
+  - uid: 5788
+    components:
+    - type: Transform
+      pos: 20.268375,121.297905
+      parent: 1
+  - uid: 5789
+    components:
+    - type: Transform
+      pos: 20.2215,121.735405
+      parent: 1
+  - uid: 5790
+    components:
+    - type: Transform
+      pos: 20.659,121.28228
+      parent: 1
+- proto: RMCBoxMagazineRifleL42AAP
+  entities:
+  - uid: 5791
+    components:
+    - type: Transform
+      parent: 5773
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
 - proto: RMCArmoryLockerRedM54CMK1AP
   entities:
   - uid: 16222
@@ -136324,11 +136310,6 @@ entities:
     components:
     - type: Transform
       pos: 29.5,118.5
-      parent: 1
-  - uid: 18167
-    components:
-    - type: Transform
-      pos: 28.5,118.5
       parent: 1
   - uid: 18168
     components:
@@ -138654,25 +138635,6 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-  - uid: 18554
-    components:
-    - type: Transform
-      parent: 18553
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
-  - uid: 18555
-    components:
-    - type: Transform
-      parent: 18553
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
-  - uid: 18556
-    components:
-    - type: Transform
-      pos: 26.508533,121.758514
-      parent: 1
 - proto: RMCBoxMagazineRifleM54CEmpty
   entities:
   - uid: 18558
@@ -149896,22 +149858,7 @@ entities:
           showEnts: False
           occludes: True
           ents:
-          - 5774
-          - 5775
-          - 5776
-          - 5777
-          - 5778
-          - 5779
-          - 5780
-          - 5781
-          - 5782
-          - 5783
-          - 5784
-          - 5785
-          - 5786
-          - 5787
-          - 5788
-          - 5789
+          - 5791
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -150017,8 +149964,8 @@ entities:
           showEnts: False
           occludes: True
           ents:
-          - 18555
-          - 18554
+          - 5785
+          - 5786
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -185118,6 +185065,59 @@ entities:
           showEnts: False
           occludes: True
           ent: null
+  - uid: 5793
+    components:
+    - type: Transform
+      pos: 28.5,118.5
+      parent: 1
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 5774
+          - 5778
+          - 5779
+          - 5780
+        paper_label: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+  - uid: 18556
+    components:
+    - type: Transform
+      pos: 27.5,118.5
+      parent: 1
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 5781
+          - 5782
+        paper_label: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+  - uid: 27176
+    components:
+    - type: Transform
+      pos: 26.5,118.5
+      parent: 1
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 5783
+          - 5784
+        paper_label: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
 - proto: RMCLockerSecureSafe
   entities:
   - uid: 29544
@@ -207709,21 +207709,6 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-  - uid: 27176
-    components:
-    - type: Transform
-      pos: 19.336658,119.396675
-      parent: 1
-  - uid: 27177
-    components:
-    - type: Transform
-      pos: 19.274158,119.66258
-      parent: 1
-  - uid: 27178
-    components:
-    - type: Transform
-      pos: 19.696033,118.67718
-      parent: 1
 - proto: WeaponShotgunM42A2
   entities:
   - uid: 27179
