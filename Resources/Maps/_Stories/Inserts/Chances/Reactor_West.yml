@@ -6446,108 +6446,144 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 15.5,12.5
       parent: 1
+    - type: RMCPodDoor
+      id: ReactorWest
   - uid: 1068
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 15.5,11.5
       parent: 1
+    - type: RMCPodDoor
+      id: ReactorWest
   - uid: 1071
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 15.5,10.5
       parent: 1
+    - type: RMCPodDoor
+      id: ReactorWest
   - uid: 1072
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 17.5,3.5
       parent: 1
+    - type: RMCPodDoor
+      id: ReactorWest
   - uid: 1073
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 17.5,2.5
       parent: 1
+    - type: RMCPodDoor
+      id: ReactorWest
   - uid: 1074
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 17.5,1.5
       parent: 1
+    - type: RMCPodDoor
+      id: ReactorWest
   - uid: 1075
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 17.5,0.5
       parent: 1
+    - type: RMCPodDoor
+      id: ReactorWest
   - uid: 1076
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 17.5,-0.5
       parent: 1
+    - type: RMCPodDoor
+      id: ReactorWest
   - uid: 1077
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 17.5,-1.5
       parent: 1
+    - type: RMCPodDoor
+      id: ReactorWest
   - uid: 1078
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 14.5,-10.5
       parent: 1
+    - type: RMCPodDoor
+      id: ReactorGangwayWest
   - uid: 1079
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 14.5,-12.5
       parent: 1
+    - type: RMCPodDoor
+      id: ReactorGangwayWest
   - uid: 1080
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 14.5,-11.5
       parent: 1
+    - type: RMCPodDoor
+      id: ReactorGangwayWest
   - uid: 1081
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 12.5,-10.5
       parent: 1
+    - type: RMCPodDoor
+      id: ReactorGangwayWest
   - uid: 1082
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 12.5,-11.5
       parent: 1
+    - type: RMCPodDoor
+      id: ReactorGangwayWest
   - uid: 1083
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 12.5,-12.5
       parent: 1
+    - type: RMCPodDoor
+      id: ReactorGangwayWest
   - uid: 1084
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 2.5,-20.5
       parent: 1
+    - type: RMCPodDoor
+      id: ReactorWest
   - uid: 1085
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 2.5,-21.5
       parent: 1
+    - type: RMCPodDoor
+      id: ReactorWest
   - uid: 1086
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 2.5,-22.5
       parent: 1
+    - type: RMCPodDoor
+      id: ReactorWest
 - proto: RMCPodDoorAIWhite
   entities:
   - uid: 517
@@ -6555,21 +6591,29 @@ entities:
     - type: Transform
       pos: -3.5,12.5
       parent: 1
+    - type: RMCPodDoor
+      id: InsideReactorWest
   - uid: 518
     components:
     - type: Transform
       pos: -2.5,12.5
       parent: 1
+    - type: RMCPodDoor
+      id: InsideReactorWest
   - uid: 519
     components:
     - type: Transform
       pos: -1.5,12.5
       parent: 1
+    - type: RMCPodDoor
+      id: InsideReactorWest
   - uid: 520
     components:
     - type: Transform
       pos: -0.5,12.5
       parent: 1
+    - type: RMCPodDoor
+      id: InsideReactorWest
 - proto: RMCPodDoorAlmayerLocked
   entities:
   - uid: 783
@@ -6605,6 +6649,8 @@ entities:
       parent: 1
     - type: Fixtures
       fixtures: {}
+    - type: RMCDoorButton
+      id: ReactorGangwayWest
 - proto: RMCPodDoorButtonBigRed
   entities:
   - uid: 1136
@@ -6615,6 +6661,8 @@ entities:
       parent: 1
     - type: Fixtures
       fixtures: {}
+    - type: RMCDoorButton
+      id: ReactorWest
   - uid: 1137
     components:
     - type: Transform
@@ -6623,6 +6671,27 @@ entities:
       parent: 1
     - type: Fixtures
       fixtures: {}
+    - type: RMCDoorButton
+      id: ReactorWest
+  - uid: 2400
+    components:
+    - type: Transform
+      pos: -4.5,12.198707
+      parent: 1
+    - type: Fixtures
+      fixtures: {}
+    - type: RMCDoorButton
+      id: InsideReactorWest
+  - uid: 2401
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -4.0368257,13.620582
+      parent: 1
+    - type: Fixtures
+      fixtures: {}
+    - type: RMCDoorButton
+      id: InsideReactorWest
 - proto: RMCPodDoorHybrisaIndestructibleUltra
   entities:
   - uid: 511
